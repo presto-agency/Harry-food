@@ -465,8 +465,8 @@ h6 {
 }
 
 p {
+  font-size: 1.4rem;
   line-height: 150%;
-  color: 1.rem;
 }
 
 small {
@@ -642,10 +642,6 @@ strong {
 
 .leading-\[150\%\] {
   line-height: 150%;
-}
-
-.text-\[1\.rem\] {
-  color: 1.rem;
 }
 
 @font-face {

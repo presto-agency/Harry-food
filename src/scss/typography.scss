@@ -24,6 +24,14 @@
   }
 
   p {
-    @apply leading-[150%] text-[1.4rem] lg:text-[1.6rem]
+    @apply leading-[150%] text-[1.rem] lg:text-[1.6rem]
+  }
+
+  small {
+    @apply leading-[150%] text-[1.2rem] lg:text-[1.4rem]
+  }
+
+  strong {
+    @apply font-bold text-[1.6rem] leading-[150%] lg:text-[2rem] leading-[133%]
   }
 }

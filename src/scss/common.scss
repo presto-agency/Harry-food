@@ -1,0 +1,13 @@
+@layer base {
+  html {
+    font-family: "Noto Sans", sans-serif;
+    font-size: calc(100vw / 1440 * 10);
+    //@apply lg:text-base
+  }
+}
+
+.wrapper {
+  @apply overflow-hidden min-h-full
+}
+
+

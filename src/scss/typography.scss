@@ -1,20 +1,29 @@
 @layer base {
-  h1{
-    @apply text-[6.4rem] font-bold
+  h1 {
+    @apply font-bold leading-[110%] text-[4rem] lg:text-[6.4rem]
   }
-  h2{
-    @apply text-[5.6rem] font-bold
+
+  h2 {
+    @apply font-bold leading-[110%] text-[3.2rem] lg:text-[5.6rem]
   }
-  h3{
-    @apply text-[4rem] font-bold
+
+  h3 {
+    @apply font-bold leading-[120%] text-[2.4rem] lg:text-[4rem]
   }
-  h4{
-    @apply text-[2.4rem] font-bold
+
+  h4 {
+    @apply font-bold leading-[111%] text-[2rem] lg:text-[2.4rem]
   }
-  h5{
-    @apply text-[2rem] font-bold
+
+  h5 {
+    @apply font-bold leading-[133%] text-[1.6rem] lg:text-[2rem]
   }
-  h6{
-    @apply text-[1.8rem] font-bold
+
+  h6 {
+    @apply font-bold leading-[111%] text-[1.4rem] lg:text-[1.8rem]
+  }
+
+  p {
+    @apply leading-[150%] text-[1.4rem] lg:text-[1.6rem]
   }
 }

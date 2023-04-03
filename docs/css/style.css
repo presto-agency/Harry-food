@@ -429,33 +429,44 @@ html {
 }
 
 h1 {
-  font-size: 6.4rem;
+  font-size: 4rem;
   font-weight: 700;
+  line-height: 110%;
 }
 
 h2 {
-  font-size: 5.6rem;
+  font-size: 3.2rem;
   font-weight: 700;
+  line-height: 110%;
 }
 
 h3 {
-  font-size: 4rem;
+  font-size: 2.4rem;
   font-weight: 700;
+  line-height: 120%;
 }
 
 h4 {
-  font-size: 2.4rem;
+  font-size: 2rem;
   font-weight: 700;
+  line-height: 111%;
 }
 
 h5 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
+  line-height: 133%;
 }
 
 h6 {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   font-weight: 700;
+  line-height: 111%;
+}
+
+p {
+  font-size: 1.4rem;
+  line-height: 150%;
 }
 
 *,
@@ -570,8 +581,12 @@ h6 {
   overflow: hidden;
 }
 
-.text-\[1\.8rem\] {
-  font-size: 1.8rem;
+.text-\[1\.4rem\] {
+  font-size: 1.4rem;
+}
+
+.text-\[1\.6rem\] {
+  font-size: 1.6rem;
 }
 
 .text-\[2\.4rem\] {
@@ -582,20 +597,36 @@ h6 {
   font-size: 2rem;
 }
 
+.text-\[3\.2rem\] {
+  font-size: 3.2rem;
+}
+
 .text-\[4rem\] {
   font-size: 4rem;
 }
 
-.text-\[5\.6rem\] {
-  font-size: 5.6rem;
-}
-
-.text-\[6\.4rem\] {
-  font-size: 6.4rem;
-}
-
 .font-bold {
   font-weight: 700;
+}
+
+.leading-\[110\%\] {
+  line-height: 110%;
+}
+
+.leading-\[111\%\] {
+  line-height: 111%;
+}
+
+.leading-\[120\%\] {
+  line-height: 120%;
+}
+
+.leading-\[133\%\] {
+  line-height: 133%;
+}
+
+.leading-\[150\%\] {
+  line-height: 150%;
 }
 
 @font-face {
@@ -634,6 +665,62 @@ h6 {
 }
 
 @media (min-width: 1024px) {
+  h1 {
+    font-size: 6.4rem;
+  }
+
+  h2 {
+    font-size: 5.6rem;
+  }
+
+  h3 {
+    font-size: 4rem;
+  }
+
+  h4 {
+    font-size: 2.4rem;
+  }
+
+  h5 {
+    font-size: 2rem;
+  }
+
+  h6 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.6rem;
+  }
+
+  .lg\:text-\[1\.6rem\] {
+    font-size: 1.6rem;
+  }
+
+  .lg\:text-\[1\.8rem\] {
+    font-size: 1.8rem;
+  }
+
+  .lg\:text-\[2\.4rem\] {
+    font-size: 2.4rem;
+  }
+
+  .lg\:text-\[2rem\] {
+    font-size: 2rem;
+  }
+
+  .lg\:text-\[4rem\] {
+    font-size: 4rem;
+  }
+
+  .lg\:text-\[5\.6rem\] {
+    font-size: 5.6rem;
+  }
+
+  .lg\:text-\[6\.4rem\] {
+    font-size: 6.4rem;
+  }
+
   .lg\:text-base {
     font-size: 10px;
   }

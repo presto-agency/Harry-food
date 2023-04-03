@@ -10,4 +10,13 @@
   @apply overflow-hidden min-h-full
 }
 
+.head-link {
+  @extend p;
+  @media (min-width: $desktop) {
+    &:hover {
+      color: $col-red-prim;
+    }
+  }
+}
+
 

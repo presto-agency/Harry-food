@@ -1,0 +1,62 @@
+.button {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid $col-black;
+  padding: 1.3rem 2.3rem;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 140%;
+  font-weight: bold;
+  border-radius: 20px;
+
+  span {
+    position: relative;
+    mix-blend-mode: difference;
+  }
+
+  &:before {
+    content: "";
+    top: -0.2rem;
+    left: -0.2rem;
+    width: calc(100% + 0.4rem);
+    height: calc(100% + 0.4rem);
+    position: absolute;
+    transition: top 0.2s cubic-bezier(0.7, 0, 0.2, 1);
+    border-radius: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    &:hover:before {
+      top: -110%;
+    }
+  }
+
+  &--primary {
+    background-color: $col-white;
+    color: $col-white;
+
+    &:before {
+      background-color: $col-black;
+    }
+  }
+
+  &--secondary {
+    background-color: $col-black;
+    color: $col-white;
+
+    &:before {
+      background-color: $col-white;
+    }
+  }
+
+  &--grey {
+    background-color: $col-black;
+    color: $col-grey-300;
+
+    &:before {
+      background-color: $col-grey-300;
+    }
+  }
+}

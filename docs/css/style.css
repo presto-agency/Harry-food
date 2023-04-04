@@ -306,6 +306,12 @@ p strong,
   }
 }
 
+@media (min-width: 1536px) {
+  html {
+    font-size: 10px;
+  }
+}
+
 @media (max-width: 1023px) {
   html {
     font-size: 10px;

@@ -3,6 +3,9 @@ html {
   @media (max-width: $mob) {
     font-size: 10px;
   }
+  @media (min-width: $desktop-xl) {
+    font-size: 10px;
+  }
 }
 
 .wrapper {

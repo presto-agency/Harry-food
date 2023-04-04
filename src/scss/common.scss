@@ -1,13 +1,13 @@
-@layer base {
-  html {
-    font-family: $fontfamily;
-    font-size: calc(100vw / 1440 * 10);
-    //@apply lg:text-base
+html {
+  font-size: calc(100vw / 1440 * 10);
+  @media (max-width: $mob) {
+    font-size: 10px;
   }
 }
 
 .wrapper {
-  @apply overflow-hidden min-h-full
+  overflow: hidden;
+  min-height: 100%;
 }
 
 .head-link {

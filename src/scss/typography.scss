@@ -1,37 +1,78 @@
-@layer base {
-  h1 {
-    @apply font-bold leading-[110%] text-[4rem] lg:text-[6.4rem]
+h1 {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 110%;
+  @media (max-width: $mob) {
+    font-size: 4rem;
   }
+}
 
-  h2 {
-    @apply font-bold leading-[110%] text-[3.2rem] lg:text-[5.6rem]
+h2 {
+  font-size: 5.6rem;
+  line-height: 110%;
+  font-weight: 700;
+  @media (max-width: $mob) {
+    font-size: 3.2rem;
   }
+}
 
-  h3 {
-    @apply font-bold leading-[120%] text-[2.4rem] lg:text-[4rem]
+h3 {
+  font-size: 4rem;
+  line-height: 120%;
+  font-weight: 700;
+  @media (max-width: $mob) {
+    font-size: 2.4rem;
   }
+}
 
-  h4 {
-    @apply font-bold leading-[111%] text-[2rem] lg:text-[2.4rem]
+h4 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 111%;
+  @media (max-width: $mob) {
+    font-size: 2rem;
   }
+}
 
-  h5 {
-    @apply font-bold leading-[133%] text-[1.6rem] lg:text-[2rem]
+h5 {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 133%;
+  @media (max-width: $mob) {
+    font-size: 1.6rem;
   }
+}
 
-  h6 {
-    @apply font-bold leading-[111%] text-[1.4rem] lg:text-[1.8rem]
+h6 {
+  font-size: 1.8rem;
+  line-height: 111%;
+  font-weight: 700;
+  @media (max-width: $mob) {
+    font-size: 1.4rem;
   }
+}
 
-  p {
-    @apply leading-[150%] text-[1.4rem] lg:text-[1.6rem]
+p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+  @media (max-width: $mob) {
+    font-size: 1.4rem;
   }
 
   small {
-    @apply leading-[150%] text-[1.2rem] lg:text-[1.4rem]
+    font-size: 1.4rem;
+    @media (max-width: $mob) {
+      font-size: 1.2rem;
+    }
   }
 
   strong {
-    @apply font-bold text-[1.6rem] leading-[150%] lg:text-[2rem] leading-[133%]
+    font-size: 2rem;
+    font-weight: 700;
+    @media (max-width: $mob) {
+      line-height: 133%;
+      font-size: 1.6rem;
+    }
   }
 }

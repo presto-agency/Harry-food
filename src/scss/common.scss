@@ -13,6 +13,15 @@ html {
   min-height: 100%;
 }
 
+.container {
+  max-width: 144rem;
+  padding: 0 32px;
+  margin: 0 auto;
+  @media (max-width: $mob) {
+    padding: 0 8px;
+  }
+}
+
 .head-link {
   @extend p;
   @media (min-width: $desktop) {

@@ -1,3 +1,3 @@
-import {hi} from "./modules/functions.js";
+import {addClassHeader} from "./modules/addClassToHeader.js";
 
-hi()
+addClassHeader()

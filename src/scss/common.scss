@@ -8,6 +8,13 @@ html {
   }
 }
 
+.root {
+  padding: 0 0 15rem 0;
+  @media (max-width: $mob) {
+    padding: 0 0 7.2rem 0;
+  }
+}
+
 .wrapper {
   overflow: hidden;
   min-height: 100%;

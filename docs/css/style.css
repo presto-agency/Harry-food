@@ -31,7 +31,7 @@ section {
 html,
 body {
   height: 100%;
-  min-width: 320px;
+  min-width: 32rem;
 }
 
 body {
@@ -94,45 +94,6 @@ h6 {
   font-size: inherit;
 }
 
-@font-face {
-  font-family: "NotoSans";
-  font-display: swap;
-  src: url("../fonts/NotoSans-Bold.woff") format("woff"), url("../fonts/NotoSans-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NotoSans";
-  font-display: swap;
-  src: url("../fonts/NotoSans-SemiBold.woff") format("woff"), url("../fonts/NotoSans-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: "NotoSans";
-  font-display: swap;
-  src: url("../fonts/NotoSans-Regular.woff") format("woff"), url("../fonts/NotoSans-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal;
-}
-
-html {
-  font-size: 0.6944444444vw;
-}
-
-.wrapper {
-  overflow: hidden;
-  min-height: 100%;
-}
-
-.container {
-  max-width: 144rem;
-  padding: 0 32px;
-  margin: 0 auto;
-}
-
 h1 {
   font-size: 6.4rem;
   font-weight: 700;
@@ -185,6 +146,49 @@ p strong,
 .head-link strong {
   font-size: 2rem;
   font-weight: 700;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  font-display: swap;
+  src: url("../fonts/NotoSans-Bold.woff") format("woff"), url("../fonts/NotoSans-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  font-display: swap;
+  src: url("../fonts/NotoSans-SemiBold.woff") format("woff"), url("../fonts/NotoSans-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NotoSans";
+  font-display: swap;
+  src: url("../fonts/NotoSans-Regular.woff") format("woff"), url("../fonts/NotoSans-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+html {
+  font-size: 0.6944444444vw;
+}
+
+.root {
+  padding: 0 0 15rem 0;
+}
+
+.wrapper {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.container {
+  max-width: 144rem;
+  padding: 0 32px;
+  margin: 0 auto;
 }
 
 .header {
@@ -277,6 +281,34 @@ p strong,
   bottom: 0.8rem;
 }
 
+.footer__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__content_logo {
+  height: 3.2rem;
+  padding: 0 9rem 0 0;
+}
+
+.footer__content > p,
+.footer__content > .head-link {
+  font-size: 1.4rem;
+  line-height: 150%;
+  font-weight: 400;
+}
+
+.footer__content nav a {
+  font-size: 1.6rem;
+  height: 150%;
+  margin: 0 5.4rem 0 0;
+}
+
+.footer__content nav a:last-child {
+  margin: 0;
+}
+
 .button {
   position: relative;
   display: flex;
@@ -325,6 +357,10 @@ p strong,
     display: none;
   }
 
+  .footer__content nav a:hover {
+    color: #E30517;
+  }
+
   .button._black:hover {
     color: #FFFFFF;
   }
@@ -341,14 +377,6 @@ p strong,
 }
 
 @media (max-width: 1023px) {
-  html {
-    font-size: 10px;
-  }
-
-  .container {
-    padding: 0 8px;
-  }
-
   h1 {
     font-size: 4rem;
   }
@@ -389,6 +417,18 @@ p strong,
     font-size: 1.6rem;
   }
 
+  html {
+    font-size: 10px;
+  }
+
+  .root {
+    padding: 0 0 7.2rem 0;
+  }
+
+  .container {
+    padding: 0 8px;
+  }
+
   .header {
     top: 0.7rem;
   }
@@ -427,5 +467,27 @@ p strong,
 
   .header__content .button span {
     width: 100%;
+  }
+
+  .footer__content {
+    flex-direction: column;
+    justify-content: initial;
+  }
+
+  .footer__content_logo {
+    padding: 0;
+    order: 1;
+  }
+
+  .footer__content nav {
+    margin: 2.7rem 0 2rem;
+    order: 2;
+  }
+
+  .footer__content > p,
+  .footer__content > .head-link {
+    font-size: 1.2rem;
+    line-height: 150%;
+    order: 3;
   }
 }

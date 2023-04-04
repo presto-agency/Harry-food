@@ -1,0 +1,60 @@
+.footer {
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &_logo {
+      height: 3.2rem;
+      padding: 0 9rem 0 0;
+    }
+
+    > p {
+      font-size: 1.4rem;
+      line-height: 150%;
+      font-weight: 400;
+    }
+
+    nav {
+      a {
+        font-size: 1.6rem;
+        height: 150%;
+        margin: 0 5.4rem 0 0;
+        @media (min-width: $desktop) {
+          &:hover {
+            color: $col-red-prim;
+          }
+        }
+
+        &:last-child {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mob) {
+  .footer {
+    &__content {
+      flex-direction: column;
+      justify-content: initial;
+
+      &_logo {
+        padding: 0;
+        order: 1;
+      }
+
+      nav {
+        margin: 2.7rem 0 2rem;
+        order: 2;
+      }
+
+      > p {
+        font-size: 1.2rem;
+        line-height: 150%;
+        order: 3;
+      }
+    }
+  }
+}

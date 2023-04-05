@@ -187,12 +187,13 @@ html {
 
 .container {
   max-width: 144rem;
-  padding: 0 32px;
+  padding: 0 3.2rem;
   margin: 0 auto;
 }
 
 .header {
   position: absolute;
+  z-index: 10;
   top: 2.4rem;
   left: 0;
   width: 100%;
@@ -311,7 +312,7 @@ html {
 
 .button {
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   overflow: hidden;
   text-align: center;
@@ -340,12 +341,97 @@ html {
   border-radius: 19px;
 }
 
-.button._black {
+.button-large span {
+  padding: 1.3rem 4.8rem;
+}
+
+.button._light {
   color: #0A0A0A;
+}
+
+.button._light:before {
+  background-color: #0A0A0A;
+}
+
+.button._black {
+  color: #FFFFFF;
 }
 
 .button._black:before {
   background-color: #0A0A0A;
+  bottom: -1px;
+}
+
+.hero {
+  min-height: 7.04rem;
+  margin: 3.2rem 0 14.4rem 0;
+}
+
+.hero__content {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  padding: 19.2rem 8rem 15.9rem;
+  background-color: #F3F3F3;
+  border-radius: 32px;
+}
+
+.hero__content:before {
+  content: "";
+  position: absolute;
+  width: 115.6rem;
+  height: 150rem;
+  top: -5rem;
+  right: -13rem;
+  background-image: url("../img/hero/white-bg-hero.svg");
+  background-size: 115.6rem 150rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__content_description {
+  position: relative;
+  z-index: 2;
+  width: 50%;
+}
+
+.hero__content_description p,
+.hero__content_description .head-link {
+  color: #E30517;
+  text-transform: uppercase;
+  margin: 0 0 1.6rem 0;
+}
+
+.hero__content_description h1 {
+  margin: 0 0 4.8rem 0;
+}
+
+.hero__content_description h1 span {
+  color: #E30517;
+}
+
+.hero__content_img {
+  width: 50%;
+}
+
+.hero__content_img img {
+  position: absolute;
+  z-index: 3;
+  bottom: -4rem;
+  right: 4rem;
+  height: 69.5rem;
+  width: auto;
+}
+
+.hero__content_img .circle {
+  position: absolute;
+  z-index: 2;
+  right: 3rem;
+  bottom: -8rem;
+  width: 62.1rem;
+  height: 62.1rem;
+  border-radius: 50%;
+  background-color: #FFFFFF;
 }
 
 @media (min-width: 1024px) {
@@ -361,12 +447,20 @@ html {
     color: #E30517;
   }
 
-  .button._black:hover {
+  .button._light:hover {
     color: #FFFFFF;
   }
 
-  .button._black:hover:before {
+  .button._light:hover:before {
     bottom: -1px;
+  }
+
+  .button._black:hover {
+    color: #0A0A0A;
+  }
+
+  .button._black:hover:before {
+    bottom: calc(100% + 2px);
   }
 }
 
@@ -426,7 +520,7 @@ html {
   }
 
   .container {
-    padding: 0 8px;
+    padding: 0 0.8rem;
   }
 
   .header {

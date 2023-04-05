@@ -1,6 +1,6 @@
 .button {
   position: relative;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   overflow: hidden;
   text-align: center;
@@ -28,7 +28,13 @@
     border-radius: 19px;
   }
 
-  &._black {
+  &-large {
+    span {
+      padding: 1.3rem 4.8rem;
+    }
+  }
+
+  &._light {
     color: $col-black;
 
     &:before {
@@ -41,6 +47,25 @@
 
         &:before {
           bottom: -1px;
+        }
+      }
+    }
+  }
+
+  &._black {
+    color: $col-white;
+
+    &:before {
+      background-color: $col-black;
+      bottom: -1px;
+    }
+
+    @media (min-width: $desktop) {
+      &:hover {
+        color: $col-black;
+
+        &:before {
+          bottom: calc(100% + 2px);
         }
       }
     }

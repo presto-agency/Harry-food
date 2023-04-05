@@ -22,10 +22,10 @@ html {
 
 .container {
   max-width: 144rem;
-  padding: 0 32px;
+  padding: 0 3.2rem;
   margin: 0 auto;
   @media (max-width: $mob) {
-    padding: 0 8px;
+    padding: 0 0.8rem;
   }
 }
 

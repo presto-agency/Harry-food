@@ -5,7 +5,6 @@
   &__content {
     position: relative;
     overflow: hidden;
-    display: flex;
     padding: 19.2rem 8rem 15.9rem;
     background-color: $col-grey-400;
     border-radius: 32px;
@@ -26,7 +25,7 @@
     &_description {
       position: relative;
       z-index: 2;
-      width: 50%;
+      max-width: 59.4rem;
 
       p {
         color: $col-red-prim;
@@ -44,26 +43,76 @@
     }
 
     &_img {
-      width: 50%;
+      position: absolute;
+      z-index: 3;
+      bottom: -4rem;
+      right: 4rem;
+      height: 69.5rem;
+      width: auto;
+    }
 
-      img {
-        position: absolute;
-        z-index: 3;
-        bottom: -4rem;
-        right: 4rem;
-        height: 69.5rem;
-        width: auto;
+    &_circle {
+      position: absolute;
+      z-index: 2;
+      right: 3rem;
+      bottom: -8rem;
+      width: 62.1rem;
+      height: 62.1rem;
+      border-radius: 50%;
+      background-color: $col-white;
+    }
+  }
+}
+
+@media (max-width: $mob) {
+  .hero {
+    margin: 0 0 6.6rem 0;
+
+    &__content {
+      padding: 11.8rem 1.6rem 36.3rem;
+
+      &:before {
+        top: 13rem;
+        right: -17rem;
       }
 
-      .circle {
-        position: absolute;
-        z-index: 2;
-        right: 3rem;
-        bottom: -8rem;
-        width: 62.1rem;
-        height: 62.1rem;
-        border-radius: 50%;
-        background-color: $col-white;
+      &_description {
+        p {
+          margin: 0 0 0.6rem 0;
+        }
+
+        h1 {
+          margin: 0 0 3.2rem 0;
+        }
+      }
+
+      &_img {
+        height: 30.1rem;
+        bottom: -1rem;
+        right: 2rem;
+      }
+
+      &_circle {
+        right: 2rem;
+        bottom: -3rem;
+        width: 26.8rem;
+        height: 26.8rem;
+      }
+    }
+  }
+}
+
+@media (max-width: $mob-s) {
+  .hero {
+    &__content {
+      &_description {
+        .button {
+          width: 100%;
+
+          span {
+            width: 100%;
+          }
+        }
       }
     }
   }

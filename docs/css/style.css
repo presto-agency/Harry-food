@@ -282,6 +282,10 @@ html {
   bottom: 0.8rem;
 }
 
+.footer {
+  padding: 3.2rem 0;
+}
+
 .footer__content {
   display: flex;
   align-items: center;
@@ -333,7 +337,7 @@ html {
 .button:before {
   content: "";
   position: absolute;
-  bottom: calc(-100% - 2px);
+  bottom: calc(-100% - 4px);
   left: 0;
   width: 100%;
   height: calc(100% + 2px);
@@ -370,7 +374,6 @@ html {
 .hero__content {
   position: relative;
   overflow: hidden;
-  display: flex;
   padding: 19.2rem 8rem 15.9rem;
   background-color: #F3F3F3;
   border-radius: 32px;
@@ -392,7 +395,7 @@ html {
 .hero__content_description {
   position: relative;
   z-index: 2;
-  width: 50%;
+  max-width: 59.4rem;
 }
 
 .hero__content_description p,
@@ -411,10 +414,6 @@ html {
 }
 
 .hero__content_img {
-  width: 50%;
-}
-
-.hero__content_img img {
   position: absolute;
   z-index: 3;
   bottom: -4rem;
@@ -423,7 +422,7 @@ html {
   width: auto;
 }
 
-.hero__content_img .circle {
+.hero__content_circle {
   position: absolute;
   z-index: 2;
   right: 3rem;
@@ -583,5 +582,54 @@ html {
     font-size: 1.2rem;
     line-height: 150%;
     order: 3;
+  }
+
+  .button-large span {
+    padding: 1.6rem 4.8rem;
+  }
+
+  .hero {
+    margin: 0 0 6.6rem 0;
+  }
+
+  .hero__content {
+    padding: 11.8rem 1.6rem 36.3rem;
+  }
+
+  .hero__content:before {
+    top: 13rem;
+    right: -17rem;
+  }
+
+  .hero__content_description p,
+  .hero__content_description .head-link {
+    margin: 0 0 0.6rem 0;
+  }
+
+  .hero__content_description h1 {
+    margin: 0 0 3.2rem 0;
+  }
+
+  .hero__content_img {
+    height: 30.1rem;
+    bottom: -1rem;
+    right: 2rem;
+  }
+
+  .hero__content_circle {
+    right: 2rem;
+    bottom: -3rem;
+    width: 26.8rem;
+    height: 26.8rem;
+  }
+}
+
+@media (max-width: 567px) {
+  .hero__content_description .button {
+    width: 100%;
+  }
+
+  .hero__content_description .button span {
+    width: 100%;
   }
 }

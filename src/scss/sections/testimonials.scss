@@ -1,0 +1,30 @@
+.testimonials {
+  margin: 15rem 0;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.6rem;
+
+    .card {
+      margin: 0 1.6rem;
+      width: calc((100% - (1.6rem * 4)) / 2);
+    }
+  }
+}
+
+@media (max-width: $mob) {
+  .testimonials {
+    margin: 8rem 0;
+
+    &__list {
+      margin: 0;
+      flex-direction: column;
+
+      .card {
+        width: 100%;
+        margin: 0 0 2.4rem 0;
+      }
+    }
+  }
+}

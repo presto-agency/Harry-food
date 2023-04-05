@@ -176,6 +176,10 @@ html {
   font-size: 0.6944444444vw;
 }
 
+body {
+  background: url("../img/bg.svg") no-repeat top 58.5rem right 0;
+}
+
 .root {
   padding: 0 0 15rem 0;
 }
@@ -199,6 +203,7 @@ html {
   padding: 4.8rem;
   border-radius: 32px;
   border: 1px solid #DDDDDD;
+  background-color: #FFFFFF;
 }
 
 .card__text {

@@ -1,6 +1,32 @@
 .supply {
   margin: 14.4rem 0 13.4rem;
 
+  &.version {
+    .supply {
+      &__content {
+        &_text {
+          margin: 11rem 0 0 -10.8rem;
+
+          p {
+            margin: 8.2rem 0 0 19rem;
+          }
+
+          a {
+            margin: 5rem 0 0 19rem;
+          }
+        }
+
+        &_img {
+          min-height: 69.6rem;
+
+          img {
+            height: 63.2rem;
+          }
+        }
+      }
+    }
+  }
+
   &__content {
     display: flex;
 
@@ -45,8 +71,18 @@
         }
       }
 
-      ul {
+      ul, p, a {
         margin: 7.2rem 0 0 19rem;
+      }
+
+      p {
+        max-width: 41.6rem;
+        font-size: 2rem;
+        line-height: 150%;
+      }
+
+      ul {
+        max-width: 41.6rem;
 
         li {
           display: flex;
@@ -80,8 +116,11 @@
         order: 1;
         margin: 0 0 4.8rem 0;
 
-        ul {
+        ul, p, a {
           margin: 2.4rem 0 0 0;
+        }
+
+        ul {
 
           li {
             font-size: 1.6rem;

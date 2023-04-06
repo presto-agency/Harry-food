@@ -20,7 +20,15 @@
           min-height: 69.6rem;
 
           img {
+            left: -18rem;
             height: 63.2rem;
+          }
+
+          .circle {
+            left: -1rem;
+            bottom: -11rem;
+            width: 62.2rem;
+            height: 62.2rem;
           }
         }
       }
@@ -109,6 +117,43 @@
   .supply {
     margin: 6rem 0;
 
+    &.version {
+      .supply {
+        margin: 8rem 0;
+
+        &__content {
+          &_text {
+            margin: 0 0 4.8rem 0;
+
+            p {
+              font-size: 1.6rem;
+              margin: 2.4rem 0 0 0;
+            }
+
+            a {
+              margin: 3.2rem 0 0 0;
+            }
+          }
+
+          &_img {
+            min-height: 32.3rem;
+
+            img {
+              left: -9rem;
+              height: 30rem;
+            }
+          }
+
+          .circle {
+            width: 28.8rem;
+            height: 28.8rem;
+            left: 0;
+            bottom: -5rem;
+          }
+        }
+      }
+    }
+
     &__content {
       flex-direction: column;
 
@@ -147,6 +192,22 @@
           bottom: -8rem;
           width: 21rem;
           height: 21rem;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mob-s) {
+  .supply {
+    &__content {
+      &_text {
+        .button {
+          width: 100%;
+
+          span {
+            width: 100%;
+          }
         }
       }
     }

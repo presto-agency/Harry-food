@@ -610,7 +610,7 @@ body {
   position: relative;
   z-index: 4;
   max-width: 44.8rem;
-  margin: 14.7rem 0 0 8rem;
+  margin: 14.7rem 0 13.7rem 8rem;
   color: #FFFFFF;
 }
 
@@ -625,7 +625,7 @@ body {
   position: absolute;
   z-index: 3;
   right: 0;
-  top: 0;
+  bottom: 0;
   height: 47.1rem;
 }
 
@@ -941,6 +941,39 @@ body {
     bottom: -8rem;
     width: 21rem;
     height: 21rem;
+  }
+
+  .truck {
+    margin: 8rem 0;
+  }
+
+  .truck__content {
+    border-radius: 16px;
+    min-height: 42.7rem;
+  }
+
+  .truck__content_img {
+    height: 20.9rem;
+  }
+
+  .truck__content_bg {
+    display: none;
+  }
+
+  .truck__content_text {
+    margin: 6.4rem 1.6rem 24.3rem;
+  }
+
+  .truck__content_text p,
+  .truck__content_text .head-link {
+    font-size: 1.6rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  .truck__content .circle {
+    width: 21.7rem;
+    height: 21.7rem;
+    right: 0.4rem;
   }
 }
 

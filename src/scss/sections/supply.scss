@@ -1,0 +1,70 @@
+.supply {
+  margin: 14.4rem 0;
+
+  &__content {
+    display: flex;
+
+    &_img {
+      position: relative;
+      flex: 0 1 51%;
+      background-color: $col-grey-400;
+      border-radius: 32px;
+      overflow: hidden;
+      min-height: 51.2rem;
+
+      img {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 65.5rem;
+        height: 51.2rem;
+      }
+
+      .circle {
+        position: absolute;
+        left: -16rem;
+        bottom: -16rem;
+        width: 45.4rem;
+        height: 45.4rem;
+        border-radius: 50%;
+        background-color: $col-white;
+      }
+    }
+
+    &_text {
+      position: relative;
+      z-index: 2;
+      flex: 0 1 49%;
+      margin: 6.5rem 0 0 -10.8rem;
+
+      h2 {
+        position: relative;
+
+        span {
+          color: $col-red-prim;
+        }
+      }
+
+      ul {
+        margin: 7.2rem 0 0 19rem;
+
+        li {
+          display: flex;
+          align-items: center;
+          margin: 0 0 1.6rem 0;
+          font-size: 2rem;
+          line-height: 150%;
+
+          &:last-child {
+            margin: 0;
+          }
+
+          img {
+            height: 3.2rem;
+            margin: 0 1.6rem 0 0;
+          }
+        }
+      }
+    }
+  }
+}

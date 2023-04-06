@@ -51,7 +51,7 @@
       width: auto;
     }
 
-    &_circle {
+    .circle {
       position: absolute;
       z-index: 2;
       right: 3rem;
@@ -92,7 +92,7 @@
         right: 2rem;
       }
 
-      &_circle {
+      .circle {
         right: 2rem;
         bottom: -3rem;
         width: 26.8rem;

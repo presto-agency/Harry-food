@@ -147,4 +147,30 @@ body {
   }
 }
 
+.grey-bg {
+  &__content {
+    padding: 14.4rem 0;
+    border-radius: 32px;
+    background-color: $col-grey-400;
+  }
+
+  section {
+    margin: 0 0 14.4rem 0;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  .supply__content{
+    &_img{
+      background-color: $col-white;
+    }
+
+    .circle{
+      background-color: $col-grey-300;
+    }
+  }
+}
+
 

@@ -35,6 +35,66 @@
     }
   }
 
+  &.mirror {
+    .supply {
+      &__content {
+        &_img {
+          order: 2;
+          min-height: 38.4rem;
+
+          .circle {
+            left: 50%;
+            bottom: -13rem;
+            transform: translateX(-50%);
+            width: 47.4rem;
+            height: 47.4rem;
+          }
+
+          img {
+            height: 38.4rem;
+            left: 50%;
+            transform: translateX(-50%);
+          }
+        }
+
+        &_text {
+          order: 1;
+          margin: 11rem 0 0 0;
+
+          a, p {
+            margin: 3.2rem 0 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  &.nature {
+    .supply {
+      &__content {
+        &_img {
+          flex: 0 1 48%;
+          min-height: 57.6rem;
+
+          img {
+            left: 50%;
+            bottom: -6rem;
+            transform: translateX(-50%);
+          }
+
+          .circle {
+            left: -16rem;
+          }
+        }
+
+        &_text {
+          flex: 0 1 52%;
+          margin: 6rem 0 0 -10.8rem;
+        }
+      }
+    }
+  }
+
   &__content {
     display: flex;
 

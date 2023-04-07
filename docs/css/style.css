@@ -712,7 +712,7 @@ body {
   background-color: #E85243;
 }
 
-@media (min-width: 568px) {
+@media (min-width: 768px) {
   .head-link:hover {
     color: #E30517;
   }
@@ -748,7 +748,7 @@ body {
   }
 }
 
-@media (max-width: 567px) {
+@media (max-width: 767px) {
   h1 {
     font-size: 4rem;
   }

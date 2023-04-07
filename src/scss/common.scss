@@ -1,14 +1,16 @@
 html {
   font-size: calc(100vw / 1440 * 10);
+
   @media (max-width: $mob) {
-    font-size: 10px;
+    font-size: calc(100vw / 360 * 10);
   }
+
   @media (min-width: $desktop-xl) {
     font-size: 10px;
   }
 }
 
-body{
+body {
   background: url("../img/bg.svg") no-repeat top 58.5rem right 0;
 }
 
@@ -120,6 +122,7 @@ body{
     padding: 3.2rem;
     &__text {
       margin: 0 0 2.6rem 0;
+
       p {
         font-size: 2rem;
       }
@@ -134,8 +137,8 @@ body{
       }
 
       &_description {
-        p{
-          strong, small{
+        p {
+          strong, small {
             font-size: 1.4rem;
           }
         }

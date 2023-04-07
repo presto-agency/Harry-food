@@ -84,6 +84,14 @@
         h1 {
           margin: 0 0 3.2rem 0;
         }
+
+        .button {
+          width: 100%;
+
+          span {
+            width: 100%;
+          }
+        }
       }
 
       &_img {
@@ -97,22 +105,6 @@
         bottom: -3rem;
         width: 26.8rem;
         height: 26.8rem;
-      }
-    }
-  }
-}
-
-@media (max-width: $mob-s) {
-  .hero {
-    &__content {
-      &_description {
-        .button {
-          width: 100%;
-
-          span {
-            width: 100%;
-          }
-        }
       }
     }
   }

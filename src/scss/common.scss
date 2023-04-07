@@ -150,6 +150,8 @@ body {
 .grey-bg {
   overflow: hidden;
   position: relative;
+  margin: 13.4rem 0 14.4rem;
+
 
   &:before {
     content: '';
@@ -178,13 +180,54 @@ body {
     }
   }
 
-  .supply__content {
-    &_img {
-      background-color: $col-white;
-    }
+  .supply {
+    &__content {
+      &_img {
+        background-color: $col-white;
+      }
 
-    .circle {
-      background-color: $col-grey-300;
+      .circle {
+        background-color: $col-grey-300;
+      }
+    }
+  }
+
+  @media (max-width: $mob) {
+    margin: 7.8rem 0 8rem;
+    &:before{
+      top: 38rem;
+      left: -66rem;
+    }
+    &__content {
+      border-radius: 16px;
+      padding: 6.4rem 0 7.7rem;
+
+      .container {
+        &._large {
+          padding: 0 1.6rem;
+        }
+      }
+
+      .supply {
+        &__content {
+          &_img {
+            border-radius: 32px;
+          }
+        }
+
+        &.nature {
+          .supply {
+            &__content {
+              &_img {
+                border-radius: 16px;
+              }
+            }
+          }
+        }
+      }
+    }
+    section {
+      margin: 0 0 8rem 0;
     }
   }
 }

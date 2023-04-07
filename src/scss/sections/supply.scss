@@ -64,7 +64,8 @@
           a, p {
             margin: 3.2rem 0 0 0;
           }
-          p{
+
+          p {
             max-width: 48.5rem;
           }
         }
@@ -93,7 +94,8 @@
         &_text {
           flex: 0 1 52%;
           margin: 7rem 0 0 -7rem;
-          p{
+
+          p {
             max-width: 44.8rem;
           }
         }
@@ -215,6 +217,55 @@
             height: 28.8rem;
             left: 0;
             bottom: -5rem;
+          }
+        }
+      }
+    }
+
+    &.mirror {
+      .supply {
+        &__content {
+          &_img {
+            min-height: 20.2rem;
+
+            img {
+              width: 31.2rem;
+              height: 20.2rem;
+              left: 50%;
+            }
+
+            .circle {
+              width: 24.9rem;
+              height: 24.9rem;
+              left: 50%;
+              bottom: -7rem;
+            }
+          }
+        }
+      }
+    }
+
+    &.nature {
+      .supply {
+        &__content {
+          &_img {
+            min-height: 29.7rem;
+
+            img {
+              bottom: -3rem;
+              left: 50%;
+            }
+
+            .circle {
+              left: -5rem;
+              bottom: -2rem;
+            }
+          }
+
+          &_text {
+            br {
+              display: none;
+            }
           }
         }
       }

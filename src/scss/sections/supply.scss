@@ -59,10 +59,13 @@
 
         &_text {
           order: 1;
-          margin: 11rem 0 0 0;
+          margin: 12.5rem 0 0 0;
 
           a, p {
             margin: 3.2rem 0 0 0;
+          }
+          p{
+            max-width: 48.5rem;
           }
         }
       }
@@ -89,7 +92,10 @@
 
         &_text {
           flex: 0 1 52%;
-          margin: 6rem 0 0 -10.8rem;
+          margin: 7rem 0 0 -7rem;
+          p{
+            max-width: 44.8rem;
+          }
         }
       }
     }

@@ -605,13 +605,18 @@ body {
 
 .supply.mirror .supply__content_text {
   order: 1;
-  margin: 11rem 0 0 0;
+  margin: 12.5rem 0 0 0;
 }
 
 .supply.mirror .supply__content_text a,
 .supply.mirror .supply__content_text p,
 .supply.mirror .supply__content_text .head-link {
   margin: 3.2rem 0 0 0;
+}
+
+.supply.mirror .supply__content_text p,
+.supply.mirror .supply__content_text .head-link {
+  max-width: 48.5rem;
 }
 
 .supply.nature .supply__content_img {
@@ -631,7 +636,12 @@ body {
 
 .supply.nature .supply__content_text {
   flex: 0 1 52%;
-  margin: 6rem 0 0 -10.8rem;
+  margin: 7rem 0 0 -7rem;
+}
+
+.supply.nature .supply__content_text p,
+.supply.nature .supply__content_text .head-link {
+  max-width: 44.8rem;
 }
 
 .supply__content {

@@ -44,7 +44,7 @@
       background-color: $col-black;
     }
 
-    @media (min-width: $desktop) {
+    @media (min-width: $desktop-l) {
       &:hover {
         color: $col-white;
 
@@ -63,7 +63,7 @@
       bottom: -1px;
     }
 
-    @media (min-width: $desktop) {
+    @media (min-width: $desktop-l) {
       &:hover {
         color: $col-black;
 

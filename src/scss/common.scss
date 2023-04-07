@@ -45,7 +45,7 @@ body {
 
 .head-link {
   @extend p;
-  @media (min-width: $desktop) {
+  @media (min-width: $desktop-l) {
     &:hover {
       color: $col-red-prim;
     }

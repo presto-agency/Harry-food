@@ -65,7 +65,7 @@
     }
 
     &_cross {
-      @media (min-width: $desktop) {
+      @media (min-width: $desktop-l) {
         display: none;
       }
       position: relative;
@@ -103,7 +103,7 @@
   }
 }
 
-@media (max-width: $mob) {
+@media (max-width: $desktop-x) {
   .header {
     top: 0.7rem;
 

@@ -264,6 +264,24 @@ body {
   color: #E30517;
 }
 
+.grey-bg {
+  overflow: hidden;
+  position: relative;
+}
+
+.grey-bg:before {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+  width: 137.6rem;
+  height: 97rem;
+  background-image: url("../img/supply/bg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 .grey-bg__content {
   padding: 14.4rem 0;
   border-radius: 32px;

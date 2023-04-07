@@ -148,6 +148,22 @@ body {
 }
 
 .grey-bg {
+  overflow: hidden;
+  position: relative;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 1rem;
+    left: 3rem;
+    width: 137.6rem;
+    height: 97rem;
+    background-image: url("../img/supply/bg.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+
   &__content {
     padding: 14.4rem 0;
     border-radius: 32px;
@@ -162,12 +178,12 @@ body {
     }
   }
 
-  .supply__content{
-    &_img{
+  .supply__content {
+    &_img {
       background-color: $col-white;
     }
 
-    .circle{
+    .circle {
       background-color: $col-grey-300;
     }
   }

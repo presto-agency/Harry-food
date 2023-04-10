@@ -12,6 +12,9 @@ html {
 
 body {
   background: url("../img/bg.svg") no-repeat top 58.5rem right 0;
+  @media (max-width: $mob) {
+    background: url("../img/bg.svg") no-repeat top 18.5rem right -8rem;
+  }
 }
 
 .root {
@@ -194,7 +197,7 @@ body {
 
   @media (max-width: $mob) {
     margin: 7.8rem 0 8rem;
-    &:before{
+    &:before {
       top: 38rem;
       left: -66rem;
     }

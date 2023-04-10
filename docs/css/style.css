@@ -832,7 +832,7 @@ body {
 }
 
 .questions__list .submenu-questions {
-  border-radius: 32px;
+  border-radius: 3.2rem;
   border: 1px solid #D1D1D1;
   margin: 0 0 2.4rem 0;
   transition: 500ms;
@@ -1356,5 +1356,53 @@ body {
     width: 21.7rem;
     height: 21.7rem;
     right: 0.4rem;
+  }
+
+  .questions {
+    margin: 8rem 0;
+  }
+
+  .questions__list {
+    margin: 4.8rem auto 0;
+  }
+
+  .questions__list .submenu-questions {
+    border-radius: 1.6rem;
+  }
+
+  .questions__list .submenu-questions > p,
+  .questions__list .submenu-questions > .head-link {
+    padding: 2.3rem 6rem 2.3rem 2.4rem;
+    font-size: 2rem;
+    line-height: 111%;
+  }
+
+  .questions__list .submenu-questions > p span,
+  .questions__list .submenu-questions > .head-link span {
+    right: 2.4rem;
+    width: 1.6rem;
+    height: 1.6rem;
+  }
+
+  .questions__list .submenu-questions > p span:before,
+  .questions__list .submenu-questions > .head-link span:before,
+  .questions__list .submenu-questions > p span:after,
+  .questions__list .submenu-questions > .head-link span:after {
+    width: 1.6rem;
+    height: 0.2rem;
+  }
+
+  .questions__list .submenu-questions > p span:after,
+  .questions__list .submenu-questions > .head-link span:after {
+    content: "";
+    height: 1.6rem;
+    width: 0.2rem;
+  }
+
+  .questions__list .submenu-questions ul li p,
+  .questions__list .submenu-questions ul li .head-link {
+    font-size: 1.4rem;
+    line-height: 150%;
+    padding: 0 2.4rem 2.4rem 2.4rem;
   }
 }

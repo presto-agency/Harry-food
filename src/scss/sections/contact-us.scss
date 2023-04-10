@@ -67,3 +67,48 @@
     }
   }
 }
+
+@media (max-width: $mob) {
+  .contact-us {
+
+    &__content {
+      padding: 6.4rem 1.6rem 16.8rem;
+      margin: 0 0 10.4rem 0;
+      border-radius: 1.6rem;
+
+      &:before {
+        top: -55rem;
+        left: -73rem;
+      }
+
+      &_title {
+        h2 {
+          br {
+            display: none;
+          }
+        }
+
+        p {
+          font-size: 1.4rem;
+          line-height: 150%;
+        }
+
+        .button {
+          margin: 3rem 0 0 0;
+          width: 100%;
+
+          span {
+            width: 100%;
+          }
+        }
+      }
+
+      &_img {
+        border-radius: 16px;
+        max-width: 31.2rem;
+        height: 20.8rem;
+        bottom: -10.4rem;
+      }
+    }
+  }
+}

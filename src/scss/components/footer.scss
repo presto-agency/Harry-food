@@ -42,6 +42,7 @@
 
 @media (max-width: $mob) {
   .footer {
+    padding: 2.4rem 0;
     &__content {
       flex-direction: column;
       justify-content: initial;

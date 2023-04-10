@@ -1190,6 +1190,10 @@ body {
     margin: 0 0 8rem 0;
   }
 
+  .footer {
+    padding: 2.4rem 0;
+  }
+
   .footer__content {
     flex-direction: column;
     justify-content: initial;
@@ -1476,5 +1480,42 @@ body {
     font-size: 1.4rem;
     line-height: 150%;
     padding: 0 2.4rem 2.4rem 2.4rem;
+  }
+
+  .contact-us__content {
+    padding: 6.4rem 1.6rem 16.8rem;
+    margin: 0 0 10.4rem 0;
+    border-radius: 1.6rem;
+  }
+
+  .contact-us__content:before {
+    top: -55rem;
+    left: -73rem;
+  }
+
+  .contact-us__content_title h2 br {
+    display: none;
+  }
+
+  .contact-us__content_title p,
+  .contact-us__content_title .head-link {
+    font-size: 1.4rem;
+    line-height: 150%;
+  }
+
+  .contact-us__content_title .button {
+    margin: 3rem 0 0 0;
+    width: 100%;
+  }
+
+  .contact-us__content_title .button span {
+    width: 100%;
+  }
+
+  .contact-us__content_img {
+    border-radius: 16px;
+    max-width: 31.2rem;
+    height: 20.8rem;
+    bottom: -10.4rem;
   }
 }

@@ -1,3 +1,8 @@
 import {addClassHeader} from "./modules/addClassToHeader.js";
+import {showSubmenu} from "./modules/showSubmenu.js";
 
-addClassHeader()
+
+window.addEventListener('load', () => {
+  addClassHeader()
+  showSubmenu(document.querySelectorAll('.submenu-questions'));
+});

@@ -1,0 +1,125 @@
+.questions {
+  margin: 15.4rem 0;
+
+  &__title {
+    text-align: center;
+
+    span {
+      color: $col-red-prim;
+    }
+  }
+
+  &__list {
+    max-width: 108.8rem;
+    margin: 6.4rem auto 0;
+
+    .submenu-questions {
+      border-radius: 32px;
+      border: 1px solid $col-grey-700;
+      margin: 0 0 2.4rem 0;
+      transition: 500ms;
+
+      &.active {
+        border: 1px solid $col-red-prim;
+
+        span {
+          &:before, &:after {
+            background-color: $col-red-prim;
+            transform: translateX(-50%) translateY(-50%) rotate(45deg);
+          }
+        }
+      }
+
+      > p {
+        cursor: pointer;
+        color: $col-black;
+        position: relative;
+        font-size: 2.4rem;
+        line-height: 111%;
+        font-weight: 600;
+        padding: 3.2rem 5.6rem 3.2rem 3.2rem;
+
+        span {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          right: 3.2rem;
+          width: 2.4rem;
+          height: 2.4rem;
+
+          &:before, &:after {
+            content: '';
+            position: absolute;
+            width: 2.4rem;
+            height: 0.3rem;
+            background: $col-black;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            transition: 500ms;
+          }
+
+          &:after {
+            content: '';
+            height: 2.4rem;
+            width: 0.3rem;
+          }
+        }
+      }
+
+      > ul {
+        max-height: 0;
+        overflow: hidden;
+        transition: 500ms;
+
+        li {
+          > p {
+            color: $col-grey-800;
+            padding: 0 3.2rem 3.2rem 3.2rem;
+            font-size: 1.6rem;
+            line-height: 150%;
+            font-weight: 400;
+            max-width: 101rem;
+          }
+
+          > img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            margin: 3.2rem 0;
+          }
+
+          > picture {
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+              margin: 3.2rem 0;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+}
+
+//@media (max-width: 1023px) {
+//  .questions {
+//
+//    &__list {
+//      .submenu-questions {
+//        p {
+//          padding: 30px;
+//          font-size: 18px;
+//          line-height: 20px;
+//
+//          span {
+//            right: 0;
+//          }
+//        }
+//      }
+//    }
+//  }
+//}

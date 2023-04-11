@@ -615,6 +615,7 @@ body.js-loaded .page-preloader {
   color: #E30517;
   text-transform: uppercase;
   margin: 0 0 1.6rem 0;
+  opacity: 0;
 }
 
 .hero__content_description h1 {
@@ -623,6 +624,10 @@ body.js-loaded .page-preloader {
 
 .hero__content_description h1 span {
   color: #E30517;
+}
+
+.hero__content_description .button {
+  opacity: 0;
 }
 
 .hero__content_img {

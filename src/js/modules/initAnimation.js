@@ -19,8 +19,8 @@ export const initAnimation = () => {
       opacity: 1,
       y: 0
     }, "period-1")
-      .to(animTopButton, {opacity: 1}, "period-2")
-      .to(animTopTopic, {opacity: 1}, "period-2")
+      .fromTo(animTopButton, {opacity: 0}, {opacity: 1}, "period-2")
+      .fromTo(animTopTopic, {opacity: 0}, {opacity: 1}, "period-2")
       .fromTo(circle, {
           width: "42.1rem",
           height: "42.1rem",

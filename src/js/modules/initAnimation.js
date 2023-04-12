@@ -9,8 +9,27 @@ export const initAnimation = () => {
   const animTopTopic = document.querySelector(".hero__content_description>p");
   const circle = document.querySelector(".circle");
   const topImg = document.querySelector(".hero__content_img");
-  const testimonials = document.querySelector(".testimonials__list");
+  const supplyImg = document.querySelector(".supply__content_img>img");
+  const supplyCircle = document.querySelector(".supply__content_img>.circle");
 
+  //text animation objects
+  const arrayFromAnimatedElements = [
+    ".testimonials__list",
+    ".supply__content_text>h2",
+    ".supply__content_text>ul",
+    ".supply__content_text>p",
+    ".supply__content_text>.button",
+    ".truck__content_text>h3",
+    ".questions__title",
+    ".questions__list>li",
+    ".contact-us__content_title>h2",
+    ".contact-us__content_title>p",
+    ".contact-us__content_title>.button",
+  ]
+  const textAnimationObjects = document.querySelectorAll(arrayFromAnimatedElements.join(", "));
+
+
+  //hero
   gsap.matchMedia().add("(min-width: 568px)", () => {
     gsap.timeline().fromTo(animTopText, {
       y: 50,
@@ -18,16 +37,16 @@ export const initAnimation = () => {
     }, {
       opacity: 1,
       y: 0
-    }, "period-1")
-      .fromTo(animTopButton, {opacity: 0}, {opacity: 1}, "period-2")
-      .fromTo(animTopTopic, {opacity: 0}, {opacity: 1}, "period-2")
+    }, "hero-1")
+      .fromTo(animTopButton, {opacity: 0}, {opacity: 1}, "hero-2")
+      .fromTo(animTopTopic, {opacity: 0}, {opacity: 1}, "hero-2")
       .fromTo(circle, {
           width: "42.1rem",
           height: "42.1rem",
         }, {
           width: "62.1rem",
           height: "62.1rem"
-        }, "period-1"
+        }, "hero-1"
       )
       .fromTo(topImg, {
           x: "20rem",
@@ -35,16 +54,31 @@ export const initAnimation = () => {
         }, {
           x: 0,
           y: 0
-        }, "period-1"
+        }, "hero-1"
       )
-
-    gsap.from(testimonials, {
-      scrollTrigger: {
-        trigger: testimonials,
-      },
-      y: "20rem",
-      opacity: 0
+//text animation on scroll
+    textAnimationObjects.forEach(obj => {
+      gsap.from(obj, {
+        scrollTrigger: {
+          trigger: obj,
+        },
+        y: "10rem",
+        opacity: 0
+      })
     })
-
+//supply animation on scroll
+    const tl1 = gsap.timeline({
+      scrollTrigger: {
+        trigger: supplyImg,
+      }
+    })
+    tl1.from(supplyCircle, {
+      width: "32.1rem",
+      height: "32.1rem",
+    }, "supply")
+      .from(supplyImg, {
+        x: "-10rem",
+        y: "5rem"
+      }, "supply")
   })
 }

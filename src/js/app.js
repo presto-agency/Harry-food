@@ -4,8 +4,8 @@ import {preloader} from "./modules/preloader.js";
 import {initAnimation} from "./modules/initAnimation.js";
 
 window.addEventListener('load', () => {
-  preloader()
   initAnimation()
+  preloader()
   addClassHeader()
   showSubmenu(document.querySelectorAll('.submenu-questions'));
 });

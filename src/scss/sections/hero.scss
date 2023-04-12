@@ -28,9 +28,12 @@
       max-width: 59.4rem;
 
       p {
-        color: $col-red-prim;
-        text-transform: uppercase;
         margin: 0 0 1.6rem 0;
+
+        strong {
+          color: $col-red-prim;
+          text-transform: uppercase;
+        }
       }
 
       h1 {

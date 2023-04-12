@@ -68,7 +68,7 @@ export const initAnimation = () => {
     }
 
 //supply animation on scroll
-    const supplyImg = document.querySelector(".hand>.container>.supply__content>.supply__content_img>img");
+    const supplyImg = document.querySelector(".animated");
     if (supplyImg) {
       gsap.from(supplyImg, {
         scrollTrigger: supplyImg,

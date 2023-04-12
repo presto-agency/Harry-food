@@ -615,7 +615,6 @@ body.js-loaded .page-preloader {
   color: #E30517;
   text-transform: uppercase;
   margin: 0 0 1.6rem 0;
-  opacity: 0;
 }
 
 .hero__content_description h1 {
@@ -624,10 +623,6 @@ body.js-loaded .page-preloader {
 
 .hero__content_description h1 span {
   color: #E30517;
-}
-
-.hero__content_description .button {
-  opacity: 0;
 }
 
 .hero__content_img {
@@ -1088,6 +1083,17 @@ body.js-loaded .page-preloader {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media (min-width: 568px) {
+  .hero__content_description .button {
+    opacity: 0;
+  }
+
+  .hero__content_description p,
+  .hero__content_description .head-link {
+    opacity: 0;
+  }
 }
 
 @media (min-width: 1200px) {

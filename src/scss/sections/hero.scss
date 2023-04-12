@@ -31,7 +31,6 @@
         color: $col-red-prim;
         text-transform: uppercase;
         margin: 0 0 1.6rem 0;
-        opacity: 0;
       }
 
       h1 {
@@ -41,9 +40,15 @@
 
         margin: 0 0 4.8rem 0;
       }
+      //opacity for animation
+      @media (min-width: $desktop) {
+        .button {
+          opacity: 0;
+        }
 
-      .button{
-        opacity: 0;
+        p {
+          opacity: 0;
+        }
       }
     }
 

@@ -10,9 +10,8 @@ export const initAnimation = () => {
   const circle = document.querySelector(".circle");
   const topImg = document.querySelector(".hero__content_img");
   const supplyImg = document.querySelector(".supply__content_img>img");
-  const supplyCircle = document.querySelector(".supply__content_img>.circle");
 
-  //text animation objects
+//text animation objects
   const arrayFromAnimatedElements = [
     ".testimonials__list",
     ".supply__content_text>h2",
@@ -29,7 +28,7 @@ export const initAnimation = () => {
   const textAnimationObjects = document.querySelectorAll(arrayFromAnimatedElements.join(", "));
 
 
-  //hero
+//hero start animation
   gsap.matchMedia().add("(min-width: 568px)", () => {
     gsap.timeline().fromTo(animTopText, {
       y: 50,
@@ -41,8 +40,8 @@ export const initAnimation = () => {
       .fromTo(animTopButton, {opacity: 0}, {opacity: 1}, "hero-2")
       .fromTo(animTopTopic, {opacity: 0}, {opacity: 1}, "hero-2")
       .fromTo(circle, {
-          width: "42.1rem",
-          height: "42.1rem",
+          width: "32.1rem",
+          height: "32.1rem",
         }, {
           width: "62.1rem",
           height: "62.1rem"
@@ -67,18 +66,35 @@ export const initAnimation = () => {
       })
     })
 //supply animation on scroll
-    const tl1 = gsap.timeline({
+    gsap.from(supplyImg, {
+      scrollTrigger: supplyImg,
+      x: "-10rem",
+      y: "5rem"
+    })
+//truck animation on scroll
+    const truckImg = document.querySelector('.truck__content_img')
+    const truckTopText = document.querySelector('.truck__content_text>p')
+    const tl = gsap.timeline({
       scrollTrigger: {
-        trigger: supplyImg,
+        trigger: truckImg
       }
     })
-    tl1.from(supplyCircle, {
-      width: "32.1rem",
-      height: "32.1rem",
-    }, "supply")
-      .from(supplyImg, {
-        x: "-10rem",
-        y: "5rem"
-      }, "supply")
+    tl.from(truckImg, {
+      x: "5rem",
+    })
+      .from(truckTopText, {
+        opacity: 0,
+      })
+// circles animation on scroll
+    const circleAnimationObjects = document.querySelectorAll(".supply__content_img>.circle");
+    circleAnimationObjects.forEach(obj => {
+      gsap.from(obj, {
+        scrollTrigger: {
+          trigger: obj,
+        },
+        width: "32.1rem",
+        height: "32.1rem",
+      })
+    })
   })
 }

@@ -20,8 +20,8 @@ export const initAnimation = () => {
         opacity: 1,
         y: 0
       }, "hero-1")
-        .fromTo(animTopButton, {opacity: 0}, {opacity: 1}, "hero-2")
-        .fromTo(animTopTopic, {opacity: 0}, {opacity: 1}, "hero-2")
+        .to(animTopButton, {opacity: 1},  "hero-2")
+        .to(animTopTopic, {opacity: 1},  "hero-2")
         .fromTo(animTopCircle, {
             width: "32.1rem",
             height: "32.1rem",

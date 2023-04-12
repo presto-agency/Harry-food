@@ -1093,6 +1093,14 @@ body.js-loaded .page-preloader {
      object-fit: cover;
 }
 
+@media (min-width: 568px) {
+  .hero__content_description .button,
+  .hero__content_description p,
+  .hero__content_description .head-link {
+    opacity: 0;
+  }
+}
+
 @media (min-width: 1200px) {
   .head-link:hover {
     color: #E30517;

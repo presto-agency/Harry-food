@@ -110,5 +110,18 @@ export const initAnimation = () => {
         })
       })
     }
+//count hero animation
+    const textCount = document.querySelector(".supply__content_text>h2>span>span");
+    if (textCount) {
+      gsap.from(textCount, {
+        scrollTrigger: {
+          trigger: textCount,
+        },
+        textContent: 0,
+        duration: 4,
+        snap: { textContent: 1 },
+        stagger: 1,
+      })
+    }
   })
 }

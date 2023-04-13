@@ -73,6 +73,19 @@
     }
   }
 
+  &.boy {
+    .supply {
+      &__content {
+        &_img {
+          .circle {
+            left: -3rem;
+            bottom: -12rem;
+          }
+        }
+      }
+    }
+  }
+
   &.nature {
     .supply {
       &__content {
@@ -97,6 +110,24 @@
 
           p {
             max-width: 44.8rem;
+          }
+        }
+      }
+    }
+  }
+
+  &.green-truck {
+    .supply {
+      &__content {
+        &_img {
+          img {
+            width: 100%;
+            height: initial;
+            transform: translateX(-50%) translateY(5rem);
+          }
+
+          .circle {
+            bottom: 7rem;
           }
         }
       }
@@ -147,14 +178,55 @@
         }
       }
 
-      ul, p, a {
+      ul, a {
         margin: 7.2rem 0 0 19rem;
       }
 
+      cite {
+        margin: 2.4rem 0 0 19rem;
+        border-radius: 8px;
+        border: 1px solid $col-grey-200;
+        padding: 1.6rem;
+        display: block;
+        font-style: initial;
+
+        p {
+          font-size: 1.8rem;
+          line-height: 111%;
+          margin: 0;
+
+          &:first-of-type {
+            margin: 0;
+          }
+
+          &:last-of-type {
+            margin: 0.8rem 0 0;
+          }
+
+          span {
+            font-weight: 700;
+          }
+        }
+      }
+
       p {
+        margin: 2.4rem 0 0 19rem;
         max-width: 41.6rem;
         font-size: 2rem;
         line-height: 150%;
+
+        &:first-of-type {
+          margin: 7.2rem 0 0 19rem;
+        }
+
+        span {
+          color: $col-red-prim;
+        }
+
+        strong {
+          font-size: 2.4rem;
+          line-height: 111%;
+        }
       }
 
       ul {
@@ -271,6 +343,32 @@
       }
     }
 
+    &.boy {
+      .supply {
+        &__content {
+          &_img {
+            .circle {
+              left: 1rem;
+              bottom: -7rem;
+            }
+          }
+        }
+      }
+    }
+
+    &.green-truck {
+      .supply {
+        &__content {
+          &_img {
+            img {
+              width: 100%;
+              height: 30rem;
+            }
+          }
+        }
+      }
+    }
+
     &__content {
       flex-direction: column;
 
@@ -278,7 +376,7 @@
         order: 1;
         margin: 0 0 4.8rem 0;
 
-        ul, p, a {
+        ul, a {
           margin: 2.4rem 0 0 0;
         }
 
@@ -299,6 +397,26 @@
 
           span {
             width: 100%;
+          }
+        }
+
+        cite {
+          margin: 1.6rem 0;
+
+          p {
+            font-size: 1.4rem;
+          }
+        }
+
+        p {
+          &:first-of-type {
+            margin: 2.4rem 0 0 0;
+          }
+
+          margin: 2.4rem 0 0 0;
+
+          strong {
+            font-size: 2rem;
           }
         }
       }

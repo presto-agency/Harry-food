@@ -1,5 +1,13 @@
 .contact-us {
   overflow: hidden;
+  &.variant{
+    .contact-us{
+      &__content{
+        padding: 14.4rem 3.2rem;
+        margin: 0;
+      }
+    }
+  }
 
   &__content {
     position: relative;

@@ -736,6 +736,11 @@ body.js-loaded .page-preloader {
   max-width: 48.5rem;
 }
 
+.supply.boy .supply__content_img .circle {
+  left: -3rem;
+  bottom: -12rem;
+}
+
 .supply.nature .supply__content_img {
   flex: 0 1 48%;
   min-height: 57.6rem;
@@ -759,6 +764,16 @@ body.js-loaded .page-preloader {
 .supply.nature .supply__content_text p,
 .supply.nature .supply__content_text .head-link {
   max-width: 44.8rem;
+}
+
+.supply.green-truck .supply__content_img img {
+  width: 100%;
+  height: initial;
+  transform: translateX(-50%) translateY(5rem);
+}
+
+.supply.green-truck .supply__content_img .circle {
+  bottom: 7rem;
 }
 
 .supply__content {
@@ -808,17 +823,63 @@ body.js-loaded .page-preloader {
 }
 
 .supply__content_text ul,
-.supply__content_text p,
-.supply__content_text .head-link,
 .supply__content_text a {
   margin: 7.2rem 0 0 19rem;
 }
 
+.supply__content_text cite {
+  margin: 2.4rem 0 0 19rem;
+  border-radius: 8px;
+  border: 1px solid #EAECF0;
+  padding: 1.6rem;
+  display: block;
+  font-style: initial;
+}
+
+.supply__content_text cite p,
+.supply__content_text cite .head-link {
+  font-size: 1.8rem;
+  line-height: 111%;
+  margin: 0;
+}
+
+.supply__content_text cite p:first-of-type,
+.supply__content_text cite .head-link:first-of-type {
+  margin: 0;
+}
+
+.supply__content_text cite p:last-of-type,
+.supply__content_text cite .head-link:last-of-type {
+  margin: 0.8rem 0 0;
+}
+
+.supply__content_text cite p span,
+.supply__content_text cite .head-link span {
+  font-weight: 700;
+}
+
 .supply__content_text p,
 .supply__content_text .head-link {
+  margin: 2.4rem 0 0 19rem;
   max-width: 41.6rem;
   font-size: 2rem;
   line-height: 150%;
+}
+
+.supply__content_text p:first-of-type,
+.supply__content_text .head-link:first-of-type {
+  margin: 7.2rem 0 0 19rem;
+}
+
+.supply__content_text p span,
+.supply__content_text .head-link span {
+  color: #E30517;
+}
+
+.supply__content_text p strong,
+.supply__content_text .head-link strong {
+  font-size: 2.4rem;
+  line-height: 111%;
 }
 
 .supply__content_text ul {
@@ -1023,6 +1084,11 @@ body.js-loaded .page-preloader {
 
 .contact-us {
   overflow: hidden;
+}
+
+.contact-us.variant .contact-us__content {
+  padding: 14.4rem 3.2rem;
+  margin: 0;
 }
 
 .contact-us__content {
@@ -1461,6 +1527,16 @@ body.js-loaded .page-preloader {
     display: none;
   }
 
+  .supply.boy .supply__content_img .circle {
+    left: 1rem;
+    bottom: -7rem;
+  }
+
+  .supply.green-truck .supply__content_img img {
+    width: 100%;
+    height: 30rem;
+  }
+
   .supply__content {
     flex-direction: column;
   }
@@ -1471,8 +1547,6 @@ body.js-loaded .page-preloader {
   }
 
   .supply__content_text ul,
-  .supply__content_text p,
-  .supply__content_text .head-link,
   .supply__content_text a {
     margin: 2.4rem 0 0 0;
   }
@@ -1492,6 +1566,30 @@ body.js-loaded .page-preloader {
 
   .supply__content_text .button span {
     width: 100%;
+  }
+
+  .supply__content_text cite {
+    margin: 1.6rem 0;
+  }
+
+  .supply__content_text cite p,
+  .supply__content_text cite .head-link {
+    font-size: 1.4rem;
+  }
+
+  .supply__content_text p,
+  .supply__content_text .head-link {
+    margin: 2.4rem 0 0 0;
+  }
+
+  .supply__content_text p:first-of-type,
+  .supply__content_text .head-link:first-of-type {
+    margin: 2.4rem 0 0 0;
+  }
+
+  .supply__content_text p strong,
+  .supply__content_text .head-link strong {
+    font-size: 2rem;
   }
 
   .supply__content_img {

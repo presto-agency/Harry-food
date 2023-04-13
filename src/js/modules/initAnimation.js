@@ -20,8 +20,8 @@ export const initAnimation = () => {
         opacity: 1,
         y: 0
       }, "hero-1")
-        .to(animTopButton, {opacity: 1},  "hero-2")
-        .to(animTopTopic, {opacity: 1},  "hero-2")
+        .to(animTopButton, {opacity: 1}, "hero-2")
+        .to(animTopTopic, {opacity: 1}, "hero-2")
         .fromTo(animTopCircle, {
             width: "32.1rem",
             height: "32.1rem",
@@ -67,13 +67,15 @@ export const initAnimation = () => {
       })
     }
 
-//supply animation on scroll
-    const supplyImg = document.querySelector(".animated");
-    if (supplyImg) {
-      gsap.from(supplyImg, {
-        scrollTrigger: supplyImg,
-        x: "-10rem",
-        y: "5rem"
+//picture animation on scroll from bottom left to current
+    const animatedImages = document.querySelectorAll(".animated");
+    if (animatedImages.length > 0) {
+      animatedImages.forEach(img => {
+        gsap.from(img, {
+          scrollTrigger: img,
+          x: "-10rem",
+          y: "5rem"
+        })
       })
     }
 

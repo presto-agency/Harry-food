@@ -129,20 +129,17 @@ h6 {
   font-weight: 700;
 }
 
-p,
-.head-link {
+p {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 150%;
 }
 
-p small,
-.head-link small {
+p small {
   font-size: 1.4rem;
 }
 
-p strong,
-.head-link strong {
+p strong {
   font-size: 2rem;
   font-weight: 700;
 }
@@ -234,8 +231,7 @@ body.js-loaded .page-preloader {
   background-position: center;
 }
 
-.card__text p,
-.card__text .head-link {
+.card__text p {
   font-size: 2.4rem;
   line-height: 111%;
   font-weight: 700;
@@ -261,14 +257,12 @@ body.js-loaded .page-preloader {
      object-fit: cover;
 }
 
-.card__person_description p strong,
-.card__person_description .head-link strong {
+.card__person_description p strong {
   font-size: 1.8rem;
   line-height: 111%;
 }
 
-.card__person_description p small,
-.card__person_description .head-link small {
+.card__person_description p small {
   font-size: 1.6rem;
   line-height: 150%;
   color: #E30517;
@@ -378,6 +372,12 @@ body.js-loaded .page-preloader {
   margin: 0 5.6rem 0 0;
 }
 
+.header__content_nav ul li a {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 .header__content_cross {
   position: relative;
   z-index: 2;
@@ -433,8 +433,7 @@ body.js-loaded .page-preloader {
      object-fit: contain;
 }
 
-.footer__content > p,
-.footer__content > .head-link {
+.footer__content > p {
   font-size: 1.4rem;
   line-height: 150%;
   font-weight: 400;
@@ -601,14 +600,12 @@ body.js-loaded .page-preloader {
   text-align: center;
 }
 
-.hero.center .hero__content_description p,
-.hero.center .hero__content_description .head-link {
+.hero.center .hero__content_description p {
   font-size: 2rem;
   line-height: 150%;
 }
 
-.hero.center .hero__content_description p strong,
-.hero.center .hero__content_description .head-link strong {
+.hero.center .hero__content_description p strong {
   font-size: 26rem;
   line-height: 110%;
 }
@@ -640,13 +637,11 @@ body.js-loaded .page-preloader {
   max-width: 59.4rem;
 }
 
-.hero__content_description p,
-.hero__content_description .head-link {
+.hero__content_description p {
   margin: 0 0 1.6rem 0;
 }
 
-.hero__content_description p strong,
-.hero__content_description .head-link strong {
+.hero__content_description p strong {
   color: #E30517;
   text-transform: uppercase;
 }
@@ -706,8 +701,7 @@ body.js-loaded .page-preloader {
   margin: 11rem 0 0 -10.8rem;
 }
 
-.supply.version .supply__content_text p,
-.supply.version .supply__content_text .head-link {
+.supply.version .supply__content_text p {
   margin: 8.2rem 0 0 19rem;
 }
 
@@ -756,13 +750,11 @@ body.js-loaded .page-preloader {
 }
 
 .supply.mirror .supply__content_text a,
-.supply.mirror .supply__content_text p,
-.supply.mirror .supply__content_text .head-link {
+.supply.mirror .supply__content_text p {
   margin: 3.2rem 0 0 0;
 }
 
-.supply.mirror .supply__content_text p,
-.supply.mirror .supply__content_text .head-link {
+.supply.mirror .supply__content_text p {
   max-width: 48.5rem;
 }
 
@@ -791,8 +783,7 @@ body.js-loaded .page-preloader {
   margin: 7rem 0 0 -7rem;
 }
 
-.supply.nature .supply__content_text p,
-.supply.nature .supply__content_text .head-link {
+.supply.nature .supply__content_text p {
   max-width: 44.8rem;
 }
 
@@ -866,48 +857,40 @@ body.js-loaded .page-preloader {
   font-style: initial;
 }
 
-.supply__content_text cite p,
-.supply__content_text cite .head-link {
+.supply__content_text cite p {
   font-size: 1.8rem;
   line-height: 111%;
   margin: 0;
 }
 
-.supply__content_text cite p:first-of-type,
-.supply__content_text cite .head-link:first-of-type {
+.supply__content_text cite p:first-of-type {
   margin: 0;
 }
 
-.supply__content_text cite p:last-of-type,
-.supply__content_text cite .head-link:last-of-type {
+.supply__content_text cite p:last-of-type {
   margin: 0.8rem 0 0;
 }
 
-.supply__content_text cite p span,
-.supply__content_text cite .head-link span {
+.supply__content_text cite p span {
   font-weight: 700;
 }
 
-.supply__content_text p,
-.supply__content_text .head-link {
+.supply__content_text p {
   margin: 2.4rem 0 0 19rem;
   max-width: 41.6rem;
   font-size: 2rem;
   line-height: 150%;
 }
 
-.supply__content_text p:first-of-type,
-.supply__content_text .head-link:first-of-type {
+.supply__content_text p:first-of-type {
   margin: 7.2rem 0 0 19rem;
 }
 
-.supply__content_text p span,
-.supply__content_text .head-link span {
+.supply__content_text p span {
   color: #E30517;
 }
 
-.supply__content_text p strong,
-.supply__content_text .head-link strong {
+.supply__content_text p strong {
   font-size: 2.4rem;
   line-height: 111%;
 }
@@ -954,8 +937,7 @@ body.js-loaded .page-preloader {
   color: #FFFFFF;
 }
 
-.truck__content_text p,
-.truck__content_text .head-link {
+.truck__content_text p {
   font-size: 2rem;
   line-height: 150%;
   margin: 0 0 1.5rem 0;
@@ -1037,8 +1019,7 @@ body.js-loaded .page-preloader {
   transform: translateX(-50%) translateY(-50%) rotate(45deg);
 }
 
-.questions__list .submenu-questions > p,
-.questions__list .submenu-questions > .head-link {
+.questions__list .submenu-questions > p {
   cursor: pointer;
   color: #0A0A0A;
   position: relative;
@@ -1048,8 +1029,7 @@ body.js-loaded .page-preloader {
   padding: 3.2rem 5.6rem 3.2rem 3.2rem;
 }
 
-.questions__list .submenu-questions > p span,
-.questions__list .submenu-questions > .head-link span {
+.questions__list .submenu-questions > p span {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -1059,9 +1039,7 @@ body.js-loaded .page-preloader {
 }
 
 .questions__list .submenu-questions > p span:before,
-.questions__list .submenu-questions > .head-link span:before,
-.questions__list .submenu-questions > p span:after,
-.questions__list .submenu-questions > .head-link span:after {
+.questions__list .submenu-questions > p span:after {
   content: "";
   position: absolute;
   width: 2.4rem;
@@ -1073,8 +1051,7 @@ body.js-loaded .page-preloader {
   transition: 500ms;
 }
 
-.questions__list .submenu-questions > p span:after,
-.questions__list .submenu-questions > .head-link span:after {
+.questions__list .submenu-questions > p span:after {
   content: "";
   height: 2.4rem;
   width: 0.3rem;
@@ -1086,8 +1063,7 @@ body.js-loaded .page-preloader {
   transition: 500ms;
 }
 
-.questions__list .submenu-questions > ul li > p,
-.questions__list .submenu-questions > ul li > .head-link {
+.questions__list .submenu-questions > ul li > p {
   color: #8C8C8C;
   padding: 0 3.2rem 3.2rem 3.2rem;
   font-size: 1.6rem;
@@ -1159,8 +1135,7 @@ body.js-loaded .page-preloader {
   color: #E30517;
 }
 
-.contact-us__content_title p,
-.contact-us__content_title .head-link {
+.contact-us__content_title p {
   font-size: 2rem;
   line-height: 150%;
 }
@@ -1220,13 +1195,11 @@ body.js-loaded .page-preloader {
   margin: 0 0 2.4rem 0;
 }
 
-.editor p,
-.editor .head-link {
+.editor p {
   margin: 1.6rem 0;
 }
 
-.editor p strong,
-.editor .head-link strong {
+.editor p strong {
   font-size: 1.6rem;
 }
 
@@ -1260,14 +1233,13 @@ body.js-loaded .page-preloader {
 
 @media (min-width: 568px) {
   .hero__content_description .button,
-  .hero__content_description p,
-  .hero__content_description .head-link {
+  .hero__content_description p {
     opacity: 0;
   }
 }
 
 @media (min-width: 1200px) {
-  .head-link:hover {
+  .header__content_nav ul li a:hover {
     color: #E30517;
   }
 
@@ -1336,7 +1308,7 @@ body.js-loaded .page-preloader {
     margin: 0 0 1.7rem 0;
   }
 
-  .header__content .head-link {
+  .header__content_nav ul li a {
     font-size: 2.4rem;
     font-weight: 600;
   }
@@ -1375,18 +1347,15 @@ body.js-loaded .page-preloader {
     font-size: 1.4rem;
   }
 
-  p,
-  .head-link {
+  p {
     font-size: 1.4rem;
   }
 
-  p small,
-  .head-link small {
+  p small {
     font-size: 1.2rem;
   }
 
-  p strong,
-  .head-link strong {
+  p strong {
     line-height: 133%;
     font-size: 1.6rem;
   }
@@ -1420,8 +1389,7 @@ body.js-loaded .page-preloader {
     margin: 0 0 2.6rem 0;
   }
 
-  .card__text p,
-  .card__text .head-link {
+  .card__text p {
     font-size: 2rem;
   }
 
@@ -1435,9 +1403,7 @@ body.js-loaded .page-preloader {
   }
 
   .card__person_description p strong,
-  .card__person_description .head-link strong,
-  .card__person_description p small,
-  .card__person_description .head-link small {
+  .card__person_description p small {
     font-size: 1.4rem;
   }
 
@@ -1490,8 +1456,7 @@ body.js-loaded .page-preloader {
     order: 2;
   }
 
-  .footer__content > p,
-  .footer__content > .head-link {
+  .footer__content > p {
     font-size: 1.2rem;
     line-height: 150%;
     order: 3;
@@ -1509,13 +1474,11 @@ body.js-loaded .page-preloader {
     padding: 16rem 1.6rem 17.6rem;
   }
 
-  .hero.center .hero__content p,
-  .hero.center .hero__content .head-link {
+  .hero.center .hero__content p {
     font-size: 1.6rem;
   }
 
-  .hero.center .hero__content p strong,
-  .hero.center .hero__content .head-link strong {
+  .hero.center .hero__content p strong {
     font-size: 18rem;
   }
 
@@ -1532,8 +1495,7 @@ body.js-loaded .page-preloader {
     right: -17rem;
   }
 
-  .hero__content_description p,
-  .hero__content_description .head-link {
+  .hero__content_description p {
     margin: 0 0 0.6rem 0;
   }
 
@@ -1589,8 +1551,7 @@ body.js-loaded .page-preloader {
     margin: 0 0 4.8rem 0;
   }
 
-  .supply.version .supply__content_text p,
-  .supply.version .supply__content_text .head-link {
+  .supply.version .supply__content_text p {
     font-size: 1.6rem;
     margin: 2.4rem 0 0 0;
   }
@@ -1695,23 +1656,19 @@ body.js-loaded .page-preloader {
     margin: 1.6rem 0;
   }
 
-  .supply__content_text cite p,
-  .supply__content_text cite .head-link {
+  .supply__content_text cite p {
     font-size: 1.4rem;
   }
 
-  .supply__content_text p,
-  .supply__content_text .head-link {
+  .supply__content_text p {
     margin: 2.4rem 0 0 0;
   }
 
-  .supply__content_text p:first-of-type,
-  .supply__content_text .head-link:first-of-type {
+  .supply__content_text p:first-of-type {
     margin: 2.4rem 0 0 0;
   }
 
-  .supply__content_text p strong,
-  .supply__content_text .head-link strong {
+  .supply__content_text p strong {
     font-size: 2rem;
   }
 
@@ -1754,8 +1711,7 @@ body.js-loaded .page-preloader {
     margin: 6.4rem 1.6rem 24.3rem;
   }
 
-  .truck__content_text p,
-  .truck__content_text .head-link {
+  .truck__content_text p {
     font-size: 1.6rem;
     margin: 0 0 0.5rem 0;
   }
@@ -1778,37 +1734,31 @@ body.js-loaded .page-preloader {
     border-radius: 1.6rem;
   }
 
-  .questions__list .submenu-questions > p,
-  .questions__list .submenu-questions > .head-link {
+  .questions__list .submenu-questions > p {
     padding: 2.3rem 6rem 2.3rem 2.4rem;
     font-size: 2rem;
     line-height: 111%;
   }
 
-  .questions__list .submenu-questions > p span,
-  .questions__list .submenu-questions > .head-link span {
+  .questions__list .submenu-questions > p span {
     right: 2.4rem;
     width: 1.6rem;
     height: 1.6rem;
   }
 
   .questions__list .submenu-questions > p span:before,
-  .questions__list .submenu-questions > .head-link span:before,
-  .questions__list .submenu-questions > p span:after,
-  .questions__list .submenu-questions > .head-link span:after {
+  .questions__list .submenu-questions > p span:after {
     width: 1.6rem;
     height: 0.2rem;
   }
 
-  .questions__list .submenu-questions > p span:after,
-  .questions__list .submenu-questions > .head-link span:after {
+  .questions__list .submenu-questions > p span:after {
     content: "";
     height: 1.6rem;
     width: 0.2rem;
   }
 
-  .questions__list .submenu-questions ul li p,
-  .questions__list .submenu-questions ul li .head-link {
+  .questions__list .submenu-questions ul li p {
     font-size: 1.4rem;
     line-height: 150%;
     padding: 0 2.4rem 2.4rem 2.4rem;
@@ -1829,8 +1779,7 @@ body.js-loaded .page-preloader {
     display: none;
   }
 
-  .contact-us__content_title p,
-  .contact-us__content_title .head-link {
+  .contact-us__content_title p {
     font-size: 1.4rem;
     line-height: 150%;
   }
@@ -1851,8 +1800,7 @@ body.js-loaded .page-preloader {
     bottom: -10.4rem;
   }
 
-  .editor p strong,
-  .editor .head-link strong {
+  .editor p strong {
     font-size: 1.4rem;
   }
 

@@ -56,15 +56,6 @@ body {
   }
 }
 
-.head-link {
-  @extend p;
-  @media (min-width: $desktop-l) {
-    &:hover {
-      color: $col-red-prim;
-    }
-  }
-}
-
 .card {
   padding: 4.8rem;
   border-radius: 32px;

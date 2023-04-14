@@ -345,8 +345,8 @@ body.js-loaded .page-preloader {
 .header__content {
   position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
   padding: 3.8rem 4rem;
 }
 
@@ -369,7 +369,12 @@ body.js-loaded .page-preloader {
   align-items: center;
 }
 
-.header__content_nav .head-link {
+.header__content_nav ul {
+  display: flex;
+  align-items: center;
+}
+
+.header__content_nav ul li {
   margin: 0 5.6rem 0 0;
 }
 
@@ -583,19 +588,19 @@ body.js-loaded .page-preloader {
   margin: 3.2rem 0 15rem 0;
 }
 
-.hero.error .hero__content_description {
+.hero.center .hero__content_description {
   max-width: initial;
   text-align: center;
 }
 
-.hero.error .hero__content_description p,
-.hero.error .hero__content_description .head-link {
+.hero.center .hero__content_description p,
+.hero.center .hero__content_description .head-link {
   font-size: 2rem;
   line-height: 150%;
 }
 
-.hero.error .hero__content_description p strong,
-.hero.error .hero__content_description .head-link strong {
+.hero.center .hero__content_description p strong,
+.hero.center .hero__content_description .head-link strong {
   font-size: 26rem;
   line-height: 110%;
 }
@@ -1236,19 +1241,25 @@ body.js-loaded .page-preloader {
   .header__content_nav {
     position: fixed;
     top: -100%;
-    display: flex;
-    flex-direction: column;
     width: 100vw;
     max-height: 100%;
     overflow-y: auto;
     background-color: #FFFFFF;
     left: 0;
+    flex-direction: column;
     padding: 10.4rem 2.4rem 4rem;
     transition: 500ms;
   }
 
-  .header__content .head-link {
+  .header__content_nav ul {
+    flex-direction: column;
+  }
+
+  .header__content_nav ul li {
     margin: 0 0 1.7rem 0;
+  }
+
+  .header__content .head-link {
     font-size: 2.4rem;
     font-weight: 600;
   }
@@ -1417,21 +1428,21 @@ body.js-loaded .page-preloader {
     margin: 0 0 6.6rem 0;
   }
 
-  .hero.error .hero__content {
+  .hero.center .hero__content {
     padding: 16rem 1.6rem 17.6rem;
   }
 
-  .hero.error .hero__content p,
-  .hero.error .hero__content .head-link {
+  .hero.center .hero__content p,
+  .hero.center .hero__content .head-link {
     font-size: 1.6rem;
   }
 
-  .hero.error .hero__content p strong,
-  .hero.error .hero__content .head-link strong {
+  .hero.center .hero__content p strong,
+  .hero.center .hero__content .head-link strong {
     font-size: 18rem;
   }
 
-  .hero.error .hero__content h1 {
+  .hero.center .hero__content h1 {
     font-size: 3.2rem;
   }
 

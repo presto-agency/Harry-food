@@ -23,19 +23,24 @@
       font-weight: 400;
     }
 
-    nav {
-      a {
-        font-size: 1.6rem;
-        height: 150%;
+    ul {
+      display: flex;
+      align-items: center;
+      li {
         margin: 0 5.4rem 0 0;
-        @media (min-width: $desktop-l) {
-          &:hover {
-            color: $col-red-prim;
-          }
-        }
 
         &:last-child {
           margin: 0;
+        }
+
+        a {
+          font-size: 1.6rem;
+          height: 150%;
+          @media (min-width: $desktop-l) {
+            &:hover {
+              color: $col-red-prim;
+            }
+          }
         }
       }
     }
@@ -55,7 +60,7 @@
         order: 1;
       }
 
-      nav {
+      ul {
         margin: 2.7rem 0 2rem;
         order: 2;
       }

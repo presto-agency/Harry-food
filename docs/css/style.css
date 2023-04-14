@@ -440,14 +440,22 @@ body.js-loaded .page-preloader {
   font-weight: 400;
 }
 
-.footer__content nav a {
-  font-size: 1.6rem;
-  height: 150%;
+.footer__content ul {
+  display: flex;
+  align-items: center;
+}
+
+.footer__content ul li {
   margin: 0 5.4rem 0 0;
 }
 
-.footer__content nav a:last-child {
+.footer__content ul li:last-child {
   margin: 0;
+}
+
+.footer__content ul li a {
+  font-size: 1.6rem;
+  height: 150%;
 }
 
 .button {
@@ -1198,7 +1206,7 @@ body.js-loaded .page-preloader {
     display: none;
   }
 
-  .footer__content nav a:hover {
+  .footer__content ul li a:hover {
     color: #E30517;
   }
 
@@ -1408,7 +1416,7 @@ body.js-loaded .page-preloader {
     order: 1;
   }
 
-  .footer__content nav {
+  .footer__content ul {
     margin: 2.7rem 0 2rem;
     order: 2;
   }

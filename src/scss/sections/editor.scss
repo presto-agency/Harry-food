@@ -13,11 +13,11 @@
   }
 
   h1, h2, h3, h4 {
-    margin: 0 0 6.4rem 0;
+    margin: 7.4rem 0 6.4rem;
   }
 
   h4, h5, h6 {
-    margin: 0 0 2.4rem 0;
+    margin: 3.4rem 0 2.4rem;
   }
 
   p {
@@ -61,6 +61,7 @@
 
 @media (max-width: $mob) {
   .editor {
+    margin: 4rem 0;
     p {
       strong {
         font-size: 1.4rem;

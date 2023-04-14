@@ -3,8 +3,10 @@
   margin: 3.2rem 0 15rem 0;
 
   &.center {
+    margin: 3.2rem 0 8rem;
     .hero {
       &__content {
+        padding: 10.2rem 8rem 7.9rem;
         &_description {
           max-width: initial;
           text-align: center;
@@ -103,9 +105,11 @@
     margin: 0 0 6.6rem 0;
 
     &.center{
+      margin: 0 0 4rem;
+
       .hero{
         &__content{
-          padding: 16rem 1.6rem 17.6rem;
+          padding: 12rem 1.6rem 10.6rem;
           p {
             font-size: 1.6rem;
 

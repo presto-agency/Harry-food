@@ -595,6 +595,14 @@ body.js-loaded .page-preloader {
   margin: 3.2rem 0 15rem 0;
 }
 
+.hero.center {
+  margin: 3.2rem 0 8rem;
+}
+
+.hero.center .hero__content {
+  padding: 10.2rem 8rem 7.9rem;
+}
+
 .hero.center .hero__content_description {
   max-width: initial;
   text-align: center;
@@ -758,9 +766,15 @@ body.js-loaded .page-preloader {
   max-width: 48.5rem;
 }
 
+.supply.boy .supply__content_img img {
+  height: 62.2rem;
+}
+
 .supply.boy .supply__content_img .circle {
-  left: -3rem;
-  bottom: -12rem;
+  width: 55rem;
+  height: 55rem;
+  left: -4rem;
+  bottom: -14rem;
 }
 
 .supply.nature .supply__content_img {
@@ -1186,13 +1200,13 @@ body.js-loaded .page-preloader {
 .editor h2,
 .editor h3,
 .editor h4 {
-  margin: 0 0 6.4rem 0;
+  margin: 7.4rem 0 6.4rem;
 }
 
 .editor h4,
 .editor h5,
 .editor h6 {
-  margin: 0 0 2.4rem 0;
+  margin: 3.4rem 0 2.4rem;
 }
 
 .editor p {
@@ -1470,8 +1484,12 @@ body.js-loaded .page-preloader {
     margin: 0 0 6.6rem 0;
   }
 
+  .hero.center {
+    margin: 0 0 4rem;
+  }
+
   .hero.center .hero__content {
-    padding: 16rem 1.6rem 17.6rem;
+    padding: 12rem 1.6rem 10.6rem;
   }
 
   .hero.center .hero__content p {
@@ -1612,8 +1630,14 @@ body.js-loaded .page-preloader {
   }
 
   .supply.boy .supply__content_img .circle {
-    left: 1rem;
+    width: 25rem;
+    height: 25rem;
+    left: -3.5rem;
     bottom: -7rem;
+  }
+
+  .supply.boy .supply__content_img img {
+    height: 26rem;
   }
 
   .supply.green-truck .supply__content_img img {
@@ -1798,6 +1822,10 @@ body.js-loaded .page-preloader {
     max-width: 31.2rem;
     height: 20.8rem;
     bottom: -10.4rem;
+  }
+
+  .editor {
+    margin: 4rem 0;
   }
 
   .editor p strong {

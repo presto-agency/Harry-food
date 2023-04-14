@@ -1189,6 +1189,47 @@ body.js-loaded .page-preloader {
      object-fit: cover;
 }
 
+.editor {
+  margin: 8rem 0;
+}
+
+.editor__content {
+  max-width: 108.8rem;
+  margin: 0 auto;
+}
+
+.editor h1 span,
+.editor h2 span,
+.editor h3 span,
+.editor h4 span,
+.editor h5 span,
+.editor h6 span {
+  color: #E30517;
+}
+
+.editor h1,
+.editor h2,
+.editor h3,
+.editor h4 {
+  margin: 0 0 6.4rem 0;
+}
+
+.editor h4,
+.editor h5,
+.editor h6 {
+  margin: 0 0 2.4rem 0;
+}
+
+.editor p,
+.editor .head-link {
+  margin: 1.6rem 0;
+}
+
+.editor a {
+  color: #E30517;
+  text-decoration: underline;
+}
+
 @media (min-width: 568px) {
   .hero__content_description .button,
   .hero__content_description p,

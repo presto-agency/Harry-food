@@ -583,6 +583,23 @@ body.js-loaded .page-preloader {
   margin: 3.2rem 0 15rem 0;
 }
 
+.hero.error .hero__content_description {
+  max-width: initial;
+  text-align: center;
+}
+
+.hero.error .hero__content_description p,
+.hero.error .hero__content_description .head-link {
+  font-size: 2rem;
+  line-height: 150%;
+}
+
+.hero.error .hero__content_description p strong,
+.hero.error .hero__content_description .head-link strong {
+  font-size: 26rem;
+  line-height: 110%;
+}
+
 .hero__content {
   position: relative;
   overflow: hidden;
@@ -1398,6 +1415,24 @@ body.js-loaded .page-preloader {
 
   .hero {
     margin: 0 0 6.6rem 0;
+  }
+
+  .hero.error .hero__content {
+    padding: 16rem 1.6rem 17.6rem;
+  }
+
+  .hero.error .hero__content p,
+  .hero.error .hero__content .head-link {
+    font-size: 1.6rem;
+  }
+
+  .hero.error .hero__content p strong,
+  .hero.error .hero__content .head-link strong {
+    font-size: 18rem;
+  }
+
+  .hero.error .hero__content h1 {
+    font-size: 3.2rem;
   }
 
   .hero__content {

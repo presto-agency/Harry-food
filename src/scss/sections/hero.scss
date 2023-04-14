@@ -2,6 +2,27 @@
   min-height: 7.04rem;
   margin: 3.2rem 0 15rem 0;
 
+  &.error {
+    .hero {
+      &__content {
+        &_description {
+          max-width: initial;
+          text-align: center;
+
+          p {
+            font-size: 2rem;
+            line-height: 150%;
+
+            strong {
+              font-size: 26rem;
+              line-height: 110%;
+            }
+          }
+        }
+      }
+    }
+  }
+
   &__content {
     position: relative;
     overflow: hidden;
@@ -80,6 +101,24 @@
 @media (max-width: $mob) {
   .hero {
     margin: 0 0 6.6rem 0;
+
+    &.error{
+      .hero{
+        &__content{
+          padding: 16rem 1.6rem 17.6rem;
+          p {
+            font-size: 1.6rem;
+
+            strong {
+              font-size: 18rem;
+            }
+          }
+          h1{
+            font-size: 3.2rem;
+          }
+        }
+      }
+    }
 
     &__content {
       padding: 11.8rem 1.6rem 36.3rem;

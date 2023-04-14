@@ -1225,9 +1225,37 @@ body.js-loaded .page-preloader {
   margin: 1.6rem 0;
 }
 
+.editor p strong,
+.editor .head-link strong {
+  font-size: 1.6rem;
+}
+
 .editor a {
   color: #E30517;
   text-decoration: underline;
+}
+
+.editor ul li {
+  font-size: 1.6rem;
+  line-height: 150%;
+  margin: 0 0 0.4rem 0;
+  position: relative;
+  padding: 0 0 0 3rem;
+}
+
+.editor ul li:last-child {
+  margin: 0;
+}
+
+.editor ul li:before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  left: 0.2rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  background-color: #E30517;
 }
 
 @media (min-width: 568px) {
@@ -1821,5 +1849,18 @@ body.js-loaded .page-preloader {
     max-width: 31.2rem;
     height: 20.8rem;
     bottom: -10.4rem;
+  }
+
+  .editor p strong,
+  .editor .head-link strong {
+    font-size: 1.4rem;
+  }
+
+  .editor ul li {
+    font-size: 1.4rem;
+  }
+
+  .editor ul li:before {
+    top: 0.5rem;
   }
 }

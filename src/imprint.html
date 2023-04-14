@@ -3,7 +3,7 @@
 <head>
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="css/style.min.css?_v=20230414160259">
+  <link rel="stylesheet" href="css/style.min.css">
   <title>HARRY FOOD</title>
 
   <link rel="icon" type="image/svg" sizes="32x32" href="img/logo-pict.svg">
@@ -66,39 +66,7 @@
     </div>
   </div>
 </div>
-<header class="header">
-  <div class="container">
-    <div class="header__content">
-      <a class="header__content_logo" href="#">
-        <img src="img/logo.svg" alt="logo">
-      </a>
-      <nav class="header__content_nav">
-        <ul>
-          <li>
-            <a class="head-link" href="#">
-              About
-            </a>
-          </li>
-          <li>
-            <a class="head-link" href="#">
-              Contact
-            </a>
-          </li>
-        </ul>
-        <a class="button _light" href="#">
-          <span>
-            Get Started
-          </span>
-        </a>
-      </nav>
-      <div class="header__content_cross">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-  </div>
-</header>
+@@include('html/header.html', {})
 <!--<div class="root"></div>-->
 <main>
   <div class="wrapper">
@@ -106,50 +74,97 @@
       <div class="container">
         <div class="hero__content">
           <div class="hero__content_description">
-            <p>
-              <strong>404</strong>
-            </p>
             <h1>
-              Oops, page not foud!
+              Imprint
             </h1>
-            <p>
-              We couldn’t find that page.
-            </p>
-            <a class="button button-large _black" href="#">
-              <span>
-                Go home
-              </span>
-            </a>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="editor">
+      <div class="container _large">
+        <div class="editor__content">
+          <p>
+            <strong>
+              PowerYou GmbH
+            </strong>
+          </p>
+          <p>
+            <strong>
+              Rosasgasse 9/10
+            </strong>
+          </p>
+          <p>
+            <strong>
+              1120 Wien
+            </strong>
+          </p>
+          <p>
+            <strong>
+              Firmenbuchnummer: FN 545737 f
+            </strong>
+          </p>
+          <p>
+            Geschäftsführer/in:
+          </p>
+          <p>
+            <strong>
+              Mag. Miryan Weichselbaum-Gharibo, LL.M.
+            </strong>
+          </p>
+          <p>
+            Firmenbuchgericht:
+          </p>
+          <p>
+            <strong>
+              Handelsgericht Wien
+            </strong>
+          </p>
+          <p>
+            Umsatzsteuernummer:
+          </p>
+          <p>
+            <strong>
+              ATU 76277627
+            </strong>
+          </p>
+          <p>
+            Unternehmensgegenstand (Auszug)
+          </p>
+          <ul>
+            <li>
+              Vermittlung und der Handel von Waren aller Art
+            </li>
+            <li>
+              Beratungsaktivitäten
+            </li>
+          </ul>
+          <p>
+            Kontaktdaten:
+          </p>
+          <p>
+            <strong>
+              info@joinpowerher.com
+            </strong>
+          </p>
+          <p>
+            Verbraucher haben die Möglichkeit, Beschwerden an die OnlineStreitbeilegungsplattform der EU zu richten:
+          </p>
+          <p>
+            <a href="#">
+              http://ec.europa.eu/odr
+            </a>
+            <strong>
+              . Sie können allfällige Beschwerde auch an die oben
+              angegebene E-Mail-Adresse richten.
+            </strong>
+          </p>
         </div>
       </div>
     </section>
   </div>
 </main>
-<footer class="footer">
-  <div class="container">
-    <div class="footer__content">
-      <p>
-        Copyright 2021 Herry Food - All rights reserved
-      </p>
-      <a class="footer__content_logo" href="#">
-        <img src="img/logo.svg" alt="logo">
-      </a>
-      <ul>
-        <li>
-          <a href="#">
-            Imprint
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            Privacy Policy
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</footer>
-<script src="js/app.min.js?_v=20230414160259"></script>
+@@include('html/footer.html', {})
+<script src="js/app.min.js"></script>
 </body>
 </html>

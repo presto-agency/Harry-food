@@ -862,7 +862,7 @@ body.js-loaded .page-preloader {
   margin: 7.2rem 0 0 19rem;
 }
 
-.supply__content_text cite {
+.supply__content_text blockquote {
   margin: 2.4rem 0 0 19rem;
   border-radius: 8px;
   border: 1px solid #EAECF0;
@@ -871,21 +871,21 @@ body.js-loaded .page-preloader {
   font-style: initial;
 }
 
-.supply__content_text cite p {
+.supply__content_text blockquote p {
   font-size: 1.8rem;
   line-height: 111%;
   margin: 0;
 }
 
-.supply__content_text cite p:first-of-type {
+.supply__content_text blockquote p:first-of-type {
   margin: 0;
 }
 
-.supply__content_text cite p:last-of-type {
+.supply__content_text blockquote p:last-of-type {
   margin: 0.8rem 0 0;
 }
 
-.supply__content_text cite p span {
+.supply__content_text blockquote p span {
   font-weight: 700;
 }
 
@@ -1676,11 +1676,11 @@ body.js-loaded .page-preloader {
     width: 100%;
   }
 
-  .supply__content_text cite {
+  .supply__content_text blockquote {
     margin: 1.6rem 0;
   }
 
-  .supply__content_text cite p {
+  .supply__content_text blockquote p {
     font-size: 1.4rem;
   }
 

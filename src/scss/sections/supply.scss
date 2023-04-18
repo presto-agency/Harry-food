@@ -188,7 +188,7 @@
         margin: 7.2rem 0 0 19rem;
       }
 
-      cite {
+      blockquote {
         margin: 2.4rem 0 0 19rem;
         border-radius: 8px;
         border: 1px solid $col-grey-200;
@@ -359,7 +359,8 @@
               left: -3.5rem;
               bottom: -7rem;
             }
-            img{
+
+            img {
               height: 26rem;
             }
           }
@@ -411,7 +412,7 @@
           }
         }
 
-        cite {
+        blockquote {
           margin: 1.6rem 0;
 
           p {

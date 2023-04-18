@@ -46,7 +46,7 @@ export const initAnimation = () => {
       ".supply__content_text>h2",
       ".supply__content_text>ul",
       ".supply__content_text>p",
-      ".supply__content_text>cite",
+      ".supply__content_text>blockquote",
       ".supply__content_text>.button",
       ".truck__content_text>h3",
       ".questions__title",

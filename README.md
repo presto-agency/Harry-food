@@ -42,10 +42,8 @@ yarn dev
 Prepare for production:
 ```bash
 npm run build
-npm start
 # or
 yarn build
-yarn start
 ```
 
 <h2 id="configuration">Configuration</h2>

@@ -51,3 +51,7 @@ yarn start
 <h2 id="configuration">Configuration</h2>
 
 /docs is compiled folder
+
+deploy to gh-pages automatically after push to branch
+
+deploy: [gh-pages](https://presto-agency.github.io/Harry-food/)

@@ -83,7 +83,8 @@ export const initAnimation = () => {
 //truck animation on scroll
     const truckImg = document.querySelector('.truck__content_img')
     if (truckImg) {
-      const truckTopText = document.querySelector('.truck__content_text>p')
+      const truckTopText = document.querySelector('.truck__content_text>p');
+      const truckButton = document.querySelector('.truck__content_text>.button')
       const tl = gsap.timeline({
         scrollTrigger: {
           trigger: truckImg
@@ -94,7 +95,9 @@ export const initAnimation = () => {
       })
         .from(truckTopText, {
           opacity: 0,
-        })
+        }, "truck")
+        .to(truckButton, {opacity: 1},
+          "truck")
     }
 
 // circles animation on scroll

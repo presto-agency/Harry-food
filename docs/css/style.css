@@ -468,6 +468,7 @@ body.js-loaded .page-preloader {
   font-weight: 700;
   border-radius: 20px;
   flex-shrink: 0;
+  background: transparent;
   transition: 200ms;
 }
 
@@ -714,7 +715,7 @@ body.js-loaded .page-preloader {
   margin: 8.2rem 0 0 19rem;
 }
 
-.supply.version .supply__content_text a {
+.supply.version .supply__content_text .button {
   margin: 5rem 0 0 19rem;
 }
 
@@ -758,7 +759,7 @@ body.js-loaded .page-preloader {
   margin: 12.5rem 0 0 0;
 }
 
-.supply.mirror .supply__content_text a,
+.supply.mirror .supply__content_text .button,
 .supply.mirror .supply__content_text p {
   margin: 3.2rem 0 0 0;
 }
@@ -859,7 +860,7 @@ body.js-loaded .page-preloader {
 }
 
 .supply__content_text ul,
-.supply__content_text a {
+.supply__content_text .button {
   margin: 7.2rem 0 0 19rem;
 }
 
@@ -956,6 +957,10 @@ body.js-loaded .page-preloader {
   font-size: 2rem;
   line-height: 150%;
   margin: 0 0 1.5rem 0;
+}
+
+.truck__content_text .button {
+  margin: 2.4rem 0 0 0;
 }
 
 .truck__content_img {
@@ -1249,6 +1254,10 @@ body.js-loaded .page-preloader {
 @media (min-width: 568px) {
   .hero__content_description .button,
   .hero__content_description p {
+    opacity: 0;
+  }
+
+  .truck__content_text .button {
     opacity: 0;
   }
 }
@@ -1576,7 +1585,7 @@ body.js-loaded .page-preloader {
     margin: 2.4rem 0 0 0;
   }
 
-  .supply.version .supply__content_text a {
+  .supply.version .supply__content_text .button {
     margin: 3.2rem 0 0 0;
   }
 
@@ -1657,7 +1666,7 @@ body.js-loaded .page-preloader {
   }
 
   .supply__content_text ul,
-  .supply__content_text a {
+  .supply__content_text .button {
     margin: 2.4rem 0 0 0;
   }
 
@@ -1740,6 +1749,14 @@ body.js-loaded .page-preloader {
   .truck__content_text p {
     font-size: 1.6rem;
     margin: 0 0 0.5rem 0;
+  }
+
+  .truck__content_text .button {
+    width: 100%;
+  }
+
+  .truck__content_text .button span {
+    width: 100%;
   }
 
   .truck__content .circle {

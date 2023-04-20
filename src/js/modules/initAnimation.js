@@ -12,7 +12,7 @@ export const initAnimation = () => {
       const animTopButton = document.querySelector(".hero__content_description>.button");
       const animTopTopic = document.querySelectorAll(".hero__content_description>p");
       const animTopCircle = document.querySelector(".hero__content>.circle");
-      const animTopImg = document.querySelector(".hero__content_img");
+      const animTopImg = document.querySelector(".hero__content>img");
       gsap.timeline().fromTo(animTopText, {
         y: 50,
         opacity: 0

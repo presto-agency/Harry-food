@@ -4,9 +4,11 @@
 
   &.center {
     margin: 3.2rem 0 8rem;
+
     .hero {
       &__content {
         padding: 10.2rem 8rem 7.9rem;
+
         &_description {
           max-width: initial;
           text-align: center;
@@ -78,7 +80,7 @@
       }
     }
 
-    &_img {
+    > img {
       position: absolute;
       z-index: 3;
       bottom: -4rem;
@@ -104,12 +106,13 @@
   .hero {
     margin: 0 0 6.6rem 0;
 
-    &.center{
+    &.center {
       margin: 0 0 4rem;
 
-      .hero{
-        &__content{
+      .hero {
+        &__content {
           padding: 12rem 1.6rem 10.6rem;
+
           p {
             font-size: 1.6rem;
 
@@ -117,7 +120,8 @@
               font-size: 18rem;
             }
           }
-          h1{
+
+          h1 {
             font-size: 3.2rem;
           }
         }
@@ -151,7 +155,7 @@
         }
       }
 
-      &_img {
+      > img {
         height: 30.1rem;
         bottom: -1rem;
         right: 2rem;

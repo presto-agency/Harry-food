@@ -52,4 +52,10 @@ yarn build
 
 deploy to gh-pages automatically after push to branch
 
-deploy: [gh-pages](https://presto-agency.github.io/Harry-food/)
+deploy:
+[main](https://presto-agency.github.io/Harry-food/),
+[404](https://presto-agency.github.io/Harry-food/404.html),
+[about](https://presto-agency.github.io/Harry-food/about.html),
+[contact](https://presto-agency.github.io/Harry-food/contact.html),
+[imprint](https://presto-agency.github.io/Harry-food/imprint.html),
+[privacy](https://presto-agency.github.io/Harry-food/privacy.html),

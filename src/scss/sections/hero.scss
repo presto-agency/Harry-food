@@ -100,6 +100,33 @@
       background-color: $col-white;
     }
   }
+  &__not-found{
+    p{
+      &.heading{
+        font-size: 8rem;
+        font-weight: 700;
+        line-height: 110%;
+        color: $col-red-prim;
+        margin-bottom: 2.4rem;
+        strong{font-size: 8rem;}
+      }
+      &.text{
+        font-weight: 400;
+        font-size: 2rem;
+        line-height: 150%;
+        color: $col-black;
+      }
+    }
+    h1{
+      font-weight: 700;
+      font-size: 6.4rem;
+      color: $col-black;
+      margin-bottom: 3.2rem;
+    }
+    .hero__content_description{
+      max-width: 37rem;
+    }
+  }
 }
 
 @media (max-width: $mob) {

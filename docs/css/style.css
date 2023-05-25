@@ -688,6 +688,36 @@ body.js-loaded .page-preloader {
   background-color: #FFFFFF;
 }
 
+.hero__not-found p.heading {
+  font-size: 8rem;
+  font-weight: 700;
+  line-height: 110%;
+  color: #E30517;
+  margin-bottom: 2.4rem;
+}
+
+.hero__not-found p.heading strong {
+  font-size: 8rem;
+}
+
+.hero__not-found p.text {
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 150%;
+  color: #0A0A0A;
+}
+
+.hero__not-found h1 {
+  font-weight: 700;
+  font-size: 6.4rem;
+  color: #0A0A0A;
+  margin-bottom: 3.2rem;
+}
+
+.hero__not-found .hero__content_description {
+  max-width: 37rem;
+}
+
 .testimonials {
   margin: 15rem 0;
 }
@@ -724,7 +754,7 @@ body.js-loaded .page-preloader {
 }
 
 .supply.version .supply__content_img img {
-  left: -18rem;
+  left: 0;
   height: 63.2rem;
 }
 
@@ -948,7 +978,7 @@ body.js-loaded .page-preloader {
 .truck__content_text {
   position: relative;
   z-index: 4;
-  max-width: 44.8rem;
+  max-width: 47.8rem;
   margin: 14.7rem 0 13.7rem 8rem;
   color: #FFFFFF;
 }
@@ -967,7 +997,8 @@ body.js-loaded .page-preloader {
   position: absolute;
   z-index: 3;
   right: 0;
-  bottom: 0;
+  top: 50%;
+  margin-top: -23.5rem;
   height: 47.1rem;
   width: 76.6rem;
 }
@@ -981,9 +1012,9 @@ body.js-loaded .page-preloader {
 
 .truck__content_bg {
   position: absolute;
-  width: 155rem;
-  height: 47.1rem;
-  left: 11rem;
+  width: 100%;
+  height: 100%;
+  right: -14%;
   bottom: 0;
 }
 
@@ -997,8 +1028,8 @@ body.js-loaded .page-preloader {
 .truck__content .circle {
   position: absolute;
   z-index: 2;
-  bottom: -7.4rem;
-  right: 2.4rem;
+  top: 4rem;
+  right: 0;
   width: 49.8rem;
   height: 49.8rem;
   border-radius: 50%;
@@ -1156,7 +1187,7 @@ body.js-loaded .page-preloader {
 }
 
 .contact-us__content_title p {
-  font-size: 2rem;
+  font-size: 2.4rem;
   line-height: 150%;
 }
 
@@ -1594,7 +1625,7 @@ body.js-loaded .page-preloader {
   }
 
   .supply.version .supply__content_img img {
-    left: -9rem;
+    left: 0;
     height: 30rem;
   }
 
@@ -1736,6 +1767,8 @@ body.js-loaded .page-preloader {
   .truck__content_img {
     width: 34rem;
     height: 20.9rem;
+    margin-top: 0;
+    top: 65%;
   }
 
   .truck__content_bg {

@@ -785,6 +785,10 @@ body.js-loaded .page-preloader {
   height: 62.2rem;
 }
 
+.supply.mirror .supply__content {
+  align-items: center;
+}
+
 .supply.mirror .supply__content_img {
   order: 2;
   min-height: 38.4rem;
@@ -806,7 +810,7 @@ body.js-loaded .page-preloader {
 
 .supply.mirror .supply__content_text {
   order: 1;
-  margin: 12.5rem 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .supply.mirror .supply__content_text .button,
@@ -846,11 +850,19 @@ body.js-loaded .page-preloader {
 
 .supply.nature .supply__content_text {
   flex: 0 1 52%;
-  margin: 7rem 0 0 -7rem;
+  margin: 0 0 0;
+  max-width: 50%;
+}
+
+.supply.nature .supply__content_text h2,
+.supply.nature .supply__content_text h3 {
+  max-width: 44.8rem;
+  margin: 8.2rem 0 0 7rem;
 }
 
 .supply.nature .supply__content_text p {
   max-width: 44.8rem;
+  margin: 8.2rem 0 0 7rem;
 }
 
 .supply.green-truck .supply__content_img img {
@@ -1709,6 +1721,10 @@ body.js-loaded .page-preloader {
     bottom: -5rem;
   }
 
+  .supply.mirror .supply__content {
+    align-items: unset;
+  }
+
   .supply.mirror .supply__content_img {
     min-height: 20.2rem;
   }
@@ -1738,6 +1754,16 @@ body.js-loaded .page-preloader {
   .supply.nature .supply__content_img .circle {
     left: -5rem;
     bottom: -2rem;
+  }
+
+  .supply.nature .supply__content_text {
+    max-width: 100%;
+  }
+
+  .supply.nature .supply__content_text h2,
+  .supply.nature .supply__content_text h3 {
+    max-width: 100%;
+    margin: 0;
   }
 
   .supply.nature .supply__content_text br {

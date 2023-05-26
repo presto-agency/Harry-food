@@ -38,6 +38,7 @@
   &.mirror {
     .supply {
       &__content {
+        align-items: center;
         &_img {
           order: 2;
           min-height: 38.4rem;
@@ -59,7 +60,7 @@
 
         &_text {
           order: 1;
-          margin: 12.5rem 0 0 0;
+          margin: 0 0 0 0;
 
           .button, p {
             margin: 3.2rem 0 0 0;
@@ -112,10 +113,15 @@
 
         &_text {
           flex: 0 1 52%;
-          margin: 7rem 0 0 -7rem;
-
+          margin: 0 0 0;
+          max-width: 50%;
+          h2, h3 {
+            max-width: 44.8rem;
+            margin: 8.2rem 0 0 7rem;
+          }
           p {
             max-width: 44.8rem;
+            margin: 8.2rem 0 0 7rem;
           }
         }
       }
@@ -142,7 +148,6 @@
 
   &__content {
     display: flex;
-
     &_img {
       position: relative;
       flex: 0 1 51%;
@@ -303,6 +308,7 @@
     &.mirror {
       .supply {
         &__content {
+          align-items: unset;
           &_img {
             min-height: 20.2rem;
 
@@ -326,9 +332,9 @@
     &.nature {
       .supply {
         &__content {
+
           &_img {
             min-height: 29.7rem;
-
             img {
               bottom: -3rem;
               left: 50%;
@@ -341,6 +347,12 @@
           }
 
           &_text {
+            max-width: 100%;
+
+            h2, h3{
+              max-width: 100%;
+              margin: 0;
+            }
             br {
               display: none;
             }
